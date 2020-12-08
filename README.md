@@ -70,7 +70,7 @@ Same description as in Team (Men)
 | Wittenberger | Jana | Forward | 08-06-98 | Germany | Summer 2017 |
 | Ito | Takara | Midfielder | 15-08-95 | Japan | Winter 2016 |
 | Kahlfeld | Miriam | Defender (C) | 07-05-93 | Germany | Summer 2012 |
-| Middleton | Paris | Forward | 27-02-96 | USA | Sumemr 2017 |
+| Middleton | Paris | Forward | 27-02-96 | USA | Summer 2017 |
 
 ### 3.6 Fixtures (Men)
 #### 3.6.1 Title 
