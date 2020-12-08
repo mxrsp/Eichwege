@@ -29,14 +29,14 @@ Eichwege is located in the southeast of Brandenburg, Germany. The landscape is s
 
 https://www.antennebrandenburg.de/programm/aktion/programmaktionen/aktionen/2020/mein-brandenburg---ihr-ort-ist-unser-star/doebern/ihr-ort-ist-unser-star-doebern.html
 
-#### 3.3 About the Club
-### 3.3.1 Title
+### 3.3 About the Club
+#### 3.3.1 Title
 About the Club
 
-### 3.3.2 Description
+#### 3.3.2 Description
 The some information and history about the club.
 
-### 3.3.2 Content
+#### 3.3.2 Content
 The club was unofficially founded in 1926 by a group of men passioned about soccer. They organized some games aginst other villages near by. The 'club' dissolved itself in 1931 but the passion stayed. The refoundation happened in 1952 but this time it was official. The womens team found itself in 1996. They managed to assert themself towards other teams very quickly.
 
 While the women have played in the Kreisliga for over 13 years the raise for men happened in 2012. Since 2019 the men even play in the Kreisoberliga.  
