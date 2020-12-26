@@ -27,7 +27,7 @@ Eichwege exists since 1818 and used to be an independent village. Its population
 
 Eichwege is located in the southeast of Brandenburg, Germany. The landscape is shaped by the so called 'Muskauer Faltenbogen'. It is heavily forested and has many lakes. Espacially the 'Eichweger Badesee' is a lake that attracts many tourists every year. If you want to find out more information visit the following link (German). It contains pictures, audios and videos about Döbern and Eichwege:
 
-https://www.antennebrandenburg.de/programm/aktion/programmaktionen/aktionen/2020/mein-brandenburg---ihr-ort-ist-unser-star/doebern/ihr-ort-ist-unser-star-doebern.html
+https://www.youtube.com/watch?v=VsaZbs9iTEc
 
 ### 3.3 About the Club
 #### 3.3.1 Title
