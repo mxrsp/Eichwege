@@ -25,7 +25,7 @@ The some information and history about Eichwege. NOTE: Please create a hyperlink
 ### 3.2.2 Content
 Eichwege exists since 1818 and used to be an independent village. Its population grew significantly due to the industrial revolution happening in Prussia where it was part of. However, the name Eichwege was not being enforced at this time. Instead, the village was called 'Dubraucke' and most of the people were speaking Wendish, a Sorbian language. This changed in the 20th century. In 1937 the name was changed to what it is now and in 1974 it became part of Döbern.
 
-Eichwege is located in the southeast of Brandenburg, Germany. The landscape is shaped by the so called 'Muskauer Faltenbogen'. It is heavily forested and has many lakes. Espacially the 'Eichweger Badesee' is a lake that attracts many tourists every year. If you want to find out more information visit the following link (German). It contains pictures, audios and videos about Döbern and Eichwege:
+Eichwege is located in the southeast of Brandenburg, Germany. The landscape is shaped by the so called 'Muskauer Faltenbogen'. It is heavily forested and has many lakes. Espacially the 'Eichweger Badesee' is a lake that attracts many tourists every year. The following link is a representation of some special places at Döbern, it would be great when you embed this video on the website:
 
 https://www.youtube.com/watch?v=VsaZbs9iTEc
 
