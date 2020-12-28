@@ -1,9 +1,8 @@
-﻿<xml id="tableMen">
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <men>
-    <teams><Place>6.</Place><Team>SG Briesen/Dissen</Team><Points>14</Points><Goal Difference>5</Goal Difference></teams>
-    <teams><Place>7.</Place><Team>Kahrener SV</Team><Points>12</Points><Goal Difference>0</Goal Difference></teams>
-    <teams><Place>8.</Place><Team>Blau-Weiß Eichwege SV</Team><Points>11</Points><Goal Difference>-6</Goal Difference></teams>
-    <teams><Place>9.</Place><Team>SpG Klein Gaglow</Team><Points>11</Points><Goal Difference>-8</Goal Difference></teams>
-    <teams><Place>10</Place><Team>SG Blau-Weiss Schorbus</Team><Points>9</Points><Goal Difference>-2</Goal Difference></teams>
+    <teams><Place>6.</Place><Team>SG Briesen/Dissen</Team><Points>14</Points><Goal-Difference>5</Goal-Difference></teams>
+    <teams><Place>7.</Place><Team>Kahrener SV</Team><Points>12</Points><Goal-Difference>0</Goal-Difference></teams>
+    <teams><Place>8.</Place><Team>Blau-Weiß Eichwege SV</Team><Points>11</Points><Goal-Difference>-6</Goal-Difference></teams>
+    <teams><Place>9.</Place><Team>SpG Klein Gaglow</Team><Points>11</Points><Goal-Difference>-8</Goal-Difference></teams>
+    <teams><Place>10</Place><Team>SG Blau-Weiss Schorbus</Team><Points>9</Points><Goal-Difference>-2</Goal-Difference></teams>
 </men>
