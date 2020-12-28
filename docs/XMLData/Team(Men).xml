@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <row><Last Name>Anderson</Last Name><First Name>Will</First Name><Position>Forward(C)</Position><Birthday(DD-MM-YY)>30-10-91</Birthday(DD-MM-YY)><Nationality>England</Nationality><In the club since>Summer 2014</In the club since></row>
+    <row><Last Name>Pflüger</Last Name><First Name>Roman</First Name><Position>Midfielder</Position><Birthday(DD-MM-YY)>17-03-99</Birthday(DD-MM-YY)><Nationality>Germany</Nationality><In the club since>Winter 2018</In the club since></row>
+    <row><Last Name>Hechsler</Last Name><First Name>Florian</First Name><Position>Defender</Position><Birthday(DD-MM-YY)>27-01-94</Birthday(DD-MM-YY)><Nationality>Germany</Nationality><In the club since>Summer 2019</In the club since></row>
+    <row><Last Name>Gruber</Last Name><First Name>Johannes</First Name><Position>Goalkeeper</Position><Birthday(DD-MM-YY)>04-11-94</Birthday(DD-MM-YY)><Nationality>Germany</Nationality><In the club since>Summer 2015</In the club since></row>
+    <row><Last Name>Friedland</Last Name><First Name>Jan-Phillip</First Name><Position>Forward</Position><Birthday(DD-MM-YY)>01-04-98</Birthday(DD-MM-YY)><Nationality>Germany</Nationality><In the club since>Summer 2019</In the club since></row>
+    <row><Last Name>Sassi</Last Name><First Name>Ali</First Name><Position>Midfielder</Position><Birthday(DD-MM-YY)>26-05-93</Birthday(DD-MM-YY)><Nationality>Germany</Nationality><In the club since>Winter 2018</In the club since></row>
+</root>

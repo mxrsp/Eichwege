@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <row><Place>3.</Place><Team>FSV Viktoria 1897 Cottbus</Team><Points>15</Points><Goal Difference>32</Goal Difference></row>
+    <row><Place>4.</Place><Team>SV Wacker 09 Frauen</Team><Points>15 </Points><Goal Difference>20</Goal Difference></row>
+    <row><Place>5.</Place><Team>Blau-Weiß Eichwege SV</Team><Points>13</Points><Goal Difference>4</Goal Difference></row>
+    <row><Place>6.</Place><Team>SG Spremberger SV</Team><Points>12</Points><Goal Difference>13</Goal Difference></row>
+    <row><Place>7.</Place><Team>SG Burg Vetschau</Team><Points>9</Points><Goal Difference>1</Goal Difference></row>
+</root>
