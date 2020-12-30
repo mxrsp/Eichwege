@@ -1,4 +1,29 @@
- /* The side navigation menu */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+font-family: Garamond;
+src: url("https://allfont.de/allfont.css?fonts=garamond");
+}
+
+@font-face {
+font-family: Copperplate;
+src: url("https://fontsgeek.com/copperplate-font");
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+/* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -42,8 +67,53 @@
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} 
+
+/*-------------------------------------------------------*/
+
+
+.normal-txt {
+    font-size: 20px;
+    font-family: "Garamond", Arial;
+    color: white;
+    text-align: center;
+    padding: 2%; 
+}
+
+.headline-txt {
+    font-size: 50px;
+    font-family: "Copperplate", Arial;
+    color: white;
+    text-align: center;
+    padding: 3%; 
+}
+
+.header-img {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(header_images/introduction.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 100%;
+    background-color: #0211B1;
+    background-size: auto;
+    width: 80%;
+    margin: 25px auto -120px auto;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+}
+
+.site-footer, .wrapper:after {
+    height: 120px; 
+}
+
+.site-footer {
+    background-color: #515a5a;
+}

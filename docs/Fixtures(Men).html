@@ -1,30 +1,72 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset=" = " UTF-8" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fixtures(Men)</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="design.css" />
+    
 </head>
+
 <body>
-    <h1>Fixtures</h1>
-    <xml src="/XMLData/Fixtures(Men).xml"></xml>
-    <table width="100%" cellpadding="0" cellspacing="2" border="0" datasrc="#books">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Location</th>
-                <th>Publisher</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><span datafld="title"></span></td>
-                <td><span datafld="location"></span></td>
-                <td><span datafld="publisher"></span></td>
-                <td><span datafld="year"></span></td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>	
+    
+    <!-- Header Image -->
+    <div class="header-img"></div>
+    
+    <div class="svg"> 
+        
+    </div>
+    
+    
+    <!-- Start der Navigation Bar -->
+    <div id="sidenavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Fixtures(Men)</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+        function openNav() {
+            document.getElementById("sidenavigation").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenavigation").style.width = "0";
+        }
+    </script>
+    
+    <!-- Start des Content Bereiches innerhalb des Wrappers-->
+    <div class="wrapper">
+        
+        <h1 class="headline-txt">Fixtures</h1>
+        
+        <xml src="/XMLData/Fixtures(Men).xml"></xml>
+            <table width="100%" cellpadding="0" cellspacing="2" border="0" datasrc="#books" class="normal-txt">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Location</th>
+                        <th>Publisher</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span datafld="title"></span></td>
+                        <td><span datafld="location"></span></td>
+                        <td><span datafld="publisher"></span></td>
+                        <td><span datafld="year"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    
+    <!-- Start des Footer Bereiches -->
+    <footer class="site-footer">
+        <p class="normal-txt">Hallo ich bin der Footer</p>
+    </footer>
+    
+</body>    
+</html>
