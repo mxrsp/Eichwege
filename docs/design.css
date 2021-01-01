@@ -70,7 +70,15 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /*-------------------------------------------------------*/
 
+#bg-color {
+/*background: rgb(0,52,9);
+background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
+    
+    background: rgb(68,147,96);
+background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);
+}
 
+/* Formatierung für normalen Text */
 .normal-txt {
     font-size: 20px;
     font-family: "Garamond", Arial;
@@ -79,6 +87,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     padding: 2%; 
 }
 
+/* Formatierung für Überschriften */
 .headline-txt {
     font-size: 50px;
     font-family: "Copperplate", Arial;
@@ -87,33 +96,243 @@ src: url("https://fontsgeek.com/copperplate-font");
     padding: 3%; 
 }
 
-.header-img {
+
+/* ------------------ Start Header ------------------ */
+
+
+/* Logo im Header */
+.logo-header {
+    height: 190px;
+    margin-left: 30px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+/* Wenn man über Logo hovert */
+.logo-header:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/* Überschrift im Header */
+.header-headline-txt {
+    font-size: 50px;
+    font-family: "Copperplate", Arial;
+    color: white;
+    text-align: center;
+    margin: 70px auto auto 30px;
+}
+
+/* Header Bild für Home */
+.header-img-home {
+    display: flex;
     width: 100%;
     height: 200px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(header_images/introduction.jpg);
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/introduction.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px ;
 }
 
+/* Header Bild für About Eichwege */
+.header-img-about-eichwege {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/about_eichwege.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px ;
+}
+
+/* Header Bild für Fixtures */
+.header-img-fixtures {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/fixtures.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px ;
+}
+
+/* Header Bild für About the Club */
+.header-img-about-club {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/about_the_club.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px ;
+}
+
+/* Header Bild für Last Results */
+.header-img-results {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/last_results.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px ;
+}
+
+/* Header Bild für League Table */
+.header-img-league-table {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/league_table.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px ;
+}
+
+/* Header Bild für Team */
+.header-img-team {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/team.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px ;
+}
+
+
+/* ------------------ Ende Header ------------------ */
+
+
+
+
+
+
+/* ------------------ Start Wrapper ------------------ */
+
+
+/* Wrapper für Website */
 .wrapper {
-    min-height: 100%;
-    background-color: #0211B1;
+    min-height: calc(100vh - 5em - 6px);
+}
+
+/* Content Wrapper für Inhalt */
+.content-wrapper {
+    min-height: 1200px;
+    background-color: #232941;
     background-size: auto;
     width: 80%;
-    margin: 25px auto -120px auto;
+    margin: 25px auto 0 auto;
+    box-sizing: border-box;
+    border-radius: 15px 15px 15px 15px;
 }
 
-.wrapper:after {
-    content: "";
-    display: block;
+/* Button Design */
+.button {
+    background-color: transparent;
+    border: 2px solid #1685DE; 
+    color: white;
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	font-family: "Garamond", Arial;
+	letter-spacing: 2px;
+	height: 30px;
+    width: 150px;
 }
 
-.site-footer, .wrapper:after {
-    height: 120px; 
+/* Wenn man über Button hovert */
+.button:hover {
+    background-color: #1685DE;
+    color: black;
+    cursor: pointer;
 }
 
+/* Zentrierung des Buttons */
+.button-alignment {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------------------ Ende Wrapper ------------------ */
+
+
+
+
+
+
+/* ------------------ Start Footer ------------------ */
+
+
+/* Footer */
 .site-footer {
-    background-color: #515a5a;
+    margin-top: 50px;
+    height: 120px; 
+    background-color: #232941;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px inset;
 }
+
+/* Logo im Footer */
+.logo-footer {
+    height: 110px;
+    margin: auto auto auto auto;
+}
+
+/* Anordnen der Elemente */
+.flex-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Überschrift im Footer */
+.footer-headline-txt {
+    position: relative;
+    font-size: 20px;
+    font-family: "Copperplate", Arial;
+    color: white;
+    text-align: center;
+    margin: 49px auto auto auto;
+}
+
+/* Normaler Text im Footer */
+.footer-normal-txt {
+    font-size: 20px;
+    font-family: "Garamond", Arial;
+    color: white;
+    text-align: center;
+    margin: 43px auto auto auto;
+    text-decoration: none;
+}
+
+
+/* ------------------ Ende Footer ------------------ */
