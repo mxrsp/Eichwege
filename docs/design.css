@@ -281,6 +281,16 @@ background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);
     align-items: center;
 }
 
+/* key stuff */
+.centered-div {
+    width: 560px; 
+    height: 315px; 
+
+    position: relative; 
+    top: 0; right: 0; 
+    bottom: 0; left: 0;
+    margin: auto; 
+}
 
 /* ------------------ Ende Wrapper ------------------ */
 
