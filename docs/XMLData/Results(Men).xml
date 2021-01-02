@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-    <row><Home>Blau-Weiß Eichwege SV</Home><Guest>Adler Klinge</Guest><Points(Home)>3</Points(Home)><Points(Guest>2</Points(Guest></row>
-    <row><Home>Kahrener SV</Home><Guest>Blau-Weiß Eichwege SV</Guest><Points(Home)>2</Points(Home)><Points(Guest>2</Points(Guest></row>
-    <row><Home>Blau-Weiß Eichwege SV</Home><Guest>SG Kausche</Guest><Points(Home)>2</Points(Home)><Points(Guest>0</Points(Guest></row>
-    <row><Home>SG Burg</Home><Guest>Blau-Weiß Eichwege SV</Guest><Points(Home)>4</Points(Home)><Points(Guest>0</Points(Guest></row>
-    <row><Home>Blau-Weiß Eichwege SV</Home><Guest>TSV Cottbus</Guest><Points(Home)>1</Points(Home)><Points(Guest>1</Points(Guest></row>
+    <row><Home>Blau-Weiß Eichwege SV</Home><Guest>Adler Klinge</Guest><Points-Home>3</Points-Home><Points-Guest>2</Points-Guest></row>
+    <row><Home>Kahrener SV</Home><Guest>Blau-Weiß Eichwege SV</Guest><Points-Home>2</Points-Home><Points-Guest>2</Points-Guest></row>
+    <row><Home>Blau-Weiß Eichwege SV</Home><Guest>SG Kausche</Guest><Points-Home>2</Points-Home><Points-Guest>0</Points-Guest></row>
+    <row><Home>SG Burg</Home><Guest>Blau-Weiß Eichwege SV</Guest><Points-Home>4</Points-Home><Points-Guest>0</Points-Guest></row>
+    <row><Home>Blau-Weiß Eichwege SV</Home><Guest>TSV Cottbus</Guest><Points-Home>1</Points-Home><Points-Guest>1</Points-Guest></row>
 </root>
