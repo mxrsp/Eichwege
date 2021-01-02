@@ -75,7 +75,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
     
     background: rgb(68,147,96);
-background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);
+	background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);
 }
 
 /* Formatierung für normalen Text */
@@ -281,7 +281,7 @@ background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);
     align-items: center;
 }
 
-/* key stuff */
+/* Spielerei um iframe zu zentrieren */
 .centered-div {
     width: 560px; 
     height: 315px; 
