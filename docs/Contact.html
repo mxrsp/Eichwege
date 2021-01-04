@@ -10,7 +10,25 @@
     
 </head>
 
-<body id="bg-color">
+<body id="bg-color" onLoad="changeCaptcha()">
+    
+    <!-- Skript zum Laden der random Captcha Zahl-->
+    <script>
+        function changeCaptcha() {
+            var possibleChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz"; 
+            var max_captcha_length = 6;
+            var changeCaptcha = '';
+            var i = 0;
+            var randomNr = 0;
+            
+            for (i = 0; i < max_captcha_length; i++) {
+                randomNr = Math.floor(Math.random() * possibleChars.length);
+                changeCaptcha += possibleChars.substring(randomNr,randomNr + 1);
+            }
+    
+            document.getElementById('randomField').value = changeCaptcha;
+        }
+    </script>
     
     <!-- Start des Header Bereiches -->
     <header class="header-img-home" alt="Boy with football">
@@ -29,8 +47,8 @@
         <a href="index.html">Home</a>
         <a href="About Eichwege.html">About Eichwege</a>
         <a href="About Club.html">About the Club</a>
-        <a href="Fixtures(Men).html">Fixtures(Men)</a>
-        <a href="Fixtures(Women).html">Fixtures(Women)</a>
+        <a href="Fixtures(Men).html">Men</a>
+        <a href="Fixtures(Women).html">Women</a>
         <a href="Staff.html">Staff</a>
         <a href="Webshop.html">Webshop</a>
         
@@ -46,14 +64,51 @@
         }
     </script>
     
-    <!-- Start des Content Bereiches innerhalb des Wrappers-->
+    <!-- Start des Content Bereiches innerhalb des Wrappers -->
     <div class="wrapper">
         <div class="content-wrapper">
             
             <h1 class="headline-txt">Contact</h1>
             
-            <p class="normal-txt" >Adress: Blau-Weiß Eichwege SV Mittelweg 6 03159 Döbern, Germany
+            <p class="normal-txt" >Adress: Blau-Weiss Eichwege SV Mittelweg 6 03159 Doebern, Germany
             </p>
+            
+            <form>    
+                <select name="title" class="formular-input">
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="dirvers">Divers</option>
+                </select>
+                <input name="surname" type="text" class="formular-input" placeholder="Surname"/>   
+                <input name="name" type="text" class="formular-input" placeholder="Name"/>   
+                <input name="email" type="text" class="formular-input" placeholder="Email"/>
+                <input name="subject" type="text" class="formular-input" placeholder="Subject"/>
+                <textarea name="message" class="formular-input" placeholder="Message"></textarea>
+                
+                <div class="flex-captcha">
+                    <input type="text" id="randomField" disabled/> 
+		              <br><br>
+	               <input id="captchaEnter" size="20" maxlength="6"/> 
+		              <br><br>
+                </div>
+                
+                
+                <input type="submit" value="SUBMIT" onClick="send()"/>
+                
+                <script>
+                    function send() 
+                    {
+                        if (document.getElementById('captchaEnter').value == document.getElementById('randomField').value ) 
+                        {
+                            alert("Message sendt!");
+                        }else {
+                            alert("Please try it again!");
+                        }
+                    
+                    }
+                </script>
+                        
+            </form>
             
         </div>
     </div>

@@ -71,10 +71,6 @@ src: url("https://fontsgeek.com/copperplate-font");
 /*-------------------------------------------------------*/
 
 #bg-color {
-/*background: rgb(0,52,9);
-background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
-    
-    background: rgb(68,147,96);
 	background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);
 }
 
@@ -105,12 +101,14 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
     height: 190px;
     margin-left: 30px;
     -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
 
 /* Wenn man über Logo hovert */
 .logo-header:hover {
     -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -228,7 +226,7 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
 
 }
 
-.container{
+.container {
 	margin: 20px auto;
 	width:400px;
 	height:400px;
@@ -238,6 +236,7 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
 	grid-row: auto auto;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
+}
 .box{
     background-color:#333;
     padding:20px;
@@ -250,7 +249,6 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
     font-family:sans-serif;
   }
 
-}
 
 
 /* ------------------ Start Wrapper ------------------ */
@@ -266,7 +264,7 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
     min-height: 1200px;
     background-color: #232941;
     background-size: auto;
-    width: 80%;
+    width: 90%;
     margin: 25px auto 0 auto;
     box-sizing: border-box;
     border-radius: 15px 15px 15px 15px;
@@ -283,11 +281,13 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
     display: inline-block;
     font-size: 20px;
     -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
 	font-family: "Garamond", Arial;
 	letter-spacing: 2px;
 	height: 30px;
     width: 150px;
+    margin: 0 25px 0 25px;
 }
 
 /* Wenn man über Button hovert */
@@ -305,24 +305,129 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
     align-items: center;
 }
 
+/* Zentrierung der Button */
+.button-alignment-men-women {
+    margin: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Spielerei um iframe zu zentrieren */
  .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-        }
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
 
-        .video-wrapper iframe,  
-        .video-wrapper object,  
-        .video-wrapper embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+.video-wrapper iframe,  
+.video-wrapper object,  
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Darstellung des Kontaktformulars */
+form { 
+    max-width: 500px; 
+    margin: 50px auto 0 auto; 
+}
+
+/* Darstellung der Textboxen */
+.formular-input {
+    color: white;
+    font-family: "Garamond", Arial;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #1685DE;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+/* Darstellung der Messagebox */
+textarea {
+    height: 200px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+/* Darstellung des Submit-Buttons */
+[type="submit"] {
+    font-family: "Copperplate", Arial;
+    width: 100%;
+    background: #1685DE;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+/* Darstellung beim hovern über den Submit-Buttons */
+[type="submit"]:hover { 
+    color: black;
+    background: #1685DE; 
+}
+
+/* Zentrieren des Captchers */
+.flex-captcha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Darstellung des Captcha Strings */
+#randomField {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Garamond", Arial;
+    font-size: 30px;
+    border-radius: 5px;
+    line-height: 22px;
+    width: 200px;
+    color: white;
+    border: 2px solid #1685DE;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Darstellung des Eingabefelds für Captcha*/
+#captchaEnter { 
+    margin-top: -20px;
+    font-family: "Garamond", Arial;
+    font-size: 30px;
+    border-radius: 5px;
+    line-height: 22px;
+    width: 200px;
+    color: black;
+    border: 2px solid #1685DE;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
 /* ------------------ Ende Wrapper ------------------ */
 
 
@@ -377,3 +482,15 @@ background: linear-gradient(90deg, rgba(0,52,9,1) 0%, rgba(0,46,9,1) 100%);*/
 
 
 /* ------------------ Ende Footer ------------------ */
+
+
+
+
+
+/* ------------------ Start Responsive Design ------------------ */
+
+
+/* Anfang */
+
+
+/* ------------------ Ende Responsive Design ------------------ */
