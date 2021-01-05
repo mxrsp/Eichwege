@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results(Men)</title>
+    <title>Team - Men</title>
     <link rel="stylesheet" href="design.css" />
 
 </head>
@@ -29,8 +29,8 @@
         <a href="index.html">Home</a>
         <a href="About Eichwege.html">About Eichwege</a>
         <a href="About Club.html">About the Club</a>
-        <a href="Team(Men).html">Men</a>
-        <a href="Team(Women).html">Women</a>
+        <a href="Men.html">Men</a>
+        <a href="Women.html">Women</a>
         <a href="Staff.html">Staff</a>
         <a href="Webshop.html">Webshop</a>
 
@@ -51,13 +51,13 @@
                     createTable(this);
                 }
             };
-            xmlhttp.open("GET", "XMLData/Results(Men).xml", true);
+            xmlhttp.open("GET", "XMLData/Fixtures(Men).xml", true);
             xmlhttp.send();
         }
         function createTable(xml) {
             var i;
             var xmlDoc = xml.responseXML;
-            var table = "<tr><th align='left'>Home</th><th align='left'>Guest</th><th align='left'>Points-Home</th><th align='left'>Points-Guest</th></tr>";
+            var table = "<tr><th align='left'>Home</th><th align='left'>Guest</th><th align='left'>Date</th></tr>";
             var x = xmlDoc.getElementsByTagName("row");
             for (i = 0; i < x.length; i++) {
                 table +=
@@ -66,12 +66,10 @@
                     "</td><td>" +
                     x[i].getElementsByTagName("Guest")[0].childNodes[0].nodeValue +
                     "</td><td>" +
-					x[i].getElementsByTagName("Points-Home")[0].childNodes[0].nodeValue +
-                    "</td><td>" +
-                    x[i].getElementsByTagName("Points-Guest")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("Date")[0].childNodes[0].nodeValue +
                     "</td></tr>";
             }
-            document.getElementById("results").innerHTML = table;
+            document.getElementById("fixtures").innerHTML = table;
         }
     </script>
 
@@ -80,17 +78,23 @@
         <div class="content-wrapper">
             
             <div class="button-alignment-men-women">
-                <a class="button" href="Fixtures(Men)">Fixtures</a>
-                <a class="button" href="Results(Men).html">Results</a>
+                <a class="button" href="">Fixtures</a>
+                <a class="button" href="">Results</a>
+                <a class="button" href="">League Table</a>
             </div>
-
-            <h1 class="headline-txt">Results(Men)</h1>
-            <table id="results" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
+            
+            <h1 class="headline-txt">Team - Men</h1>
+            <table id="fixtures" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
 
             <script>
                 loadXMLDoc();
             </script>
 
+            <h1 class="headline-txt">Fixtures - Men</h1>
+            
+            <h1 class="headline-txt">Results - Men</h1>
+            
+            <h1 class="headline-txt">League Table - Men</h1>
         </div>
     </div>
 

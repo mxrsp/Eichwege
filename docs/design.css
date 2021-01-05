@@ -85,7 +85,8 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* Formatierung für Überschriften */
 .headline-txt {
-    font-size: 50px;
+    font-size: 45px;
+    font-weight: lighter;
     font-family: "Copperplate", Arial;
     color: white;
     text-align: center;
@@ -478,6 +479,15 @@ textarea {
     text-align: center;
     margin: 43px auto auto auto;
     text-decoration: none;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+/* Normaler Text im Footer beim drüber hovern */
+.footer-normal-txt:hover {
+    color: #1685DE;
+    cursor: pointer;
 }
 
 
