@@ -11,17 +11,17 @@
 </head>
 
 <body id="bg-color">
-    
+
     <!-- Start des Header Bereiches -->
     <header class="header-img-home" alt="Boy with football">
-        
+
         <a href="index.html">
             <img class="logo-header" src="SVG/Logo-BWE-SV-final.svg">
         </a>
         <p class="header-headline-txt">Blau-Weiss Eichwege SV</p>
-        
+
     </header>
-     
+
     <script>
         function openNav() {
             document.getElementById("sidenavigation").style.width = "250px";
@@ -30,17 +30,20 @@
         function closeNav() {
             document.getElementById("sidenavigation").style.width = "0";
         }
+        function send() {
+            alert("Dankschön");
+        }
     </script>
-    
+
     <!-- Start des Content Bereiches innerhalb des Wrappers-->
     <div class="wrapper">
-        
+
         <!-- Start der Navigation Bar -->
         <span class="burgermenu" onclick="openNav()">&#9776;</span>
-        
+
         <div id="sidenavigation" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
+
             <a href="index.html">Home</a>
             <a href="About Eichwege.html">About Eichwege</a>
             <a href="About Club.html">About the Club</a>
@@ -49,7 +52,7 @@
             <a href="Staff.html">Staff</a>
             <a href="Webshop.html">Webshop</a>
         </div>
-        
+
         <div class="content-wrapper">
 
             <h1 class="headline-txt">Webshop</h1>
@@ -58,34 +61,45 @@
                 In this Web Shop we will soon give you the opportunity to buy the tickets to our games online. Also we are planning on selling merchandise so that you can support us.
             </p>
 
-            <div class="grid-container">
+            <div class="shop-container">
                 <div class="Image-of-Product">
                     <div class="Img"> <img src="SVG/Logo-BWE-SV-final.svg"></div>
                 </div>
                 <div class="Buy-Field">
-                    <div class="Size-Select">Button</div>
-                    <div class="Amount">Amount</div>
-                    <div class="Buy-Btn">Button</div>
+                    <div class="Size-Select">
+                        <select name="title" class="formular-input">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                    <div class="Amount">
+                        <input name="Amount" type="text" class="formular-input" placeholder="1" />
+                    </div>
+                    <div class="Buy-Btn">
+                        <input type="submit" value="BUY" onClick="send()" />
+                    </div>
                     <div class="Info">
-                        <div class="Name">Name</div>
-                        <div class="Description">Description</div>
+                        <div class="Name">TOLLES ITEM</div>
+                        <div class="Description">Was kann es denn so?</div>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
-    
+
     <!-- Start des Footer Bereiches -->
-    <footer class="site-footer">  
+    <footer class="site-footer">
         <div class="flex-layout">
-            
+
             <img class="logo-footer" src="SVG/Logo-BWE-SV-final.svg">
             <p class="footer-headline-txt">Blau-Weiss Eichwege SV</p>
-            <a class="footer-normal-txt" href="Contact.html">Contact</a> 
-          
-        </div>     
+            <a class="footer-normal-txt" href="Contact.html">Contact</a>
+
+        </div>
     </footer>
-    
+
 </body>    
 </html>

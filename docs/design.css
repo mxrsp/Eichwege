@@ -235,14 +235,15 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* ------------------ Webshop ------------------ */
 
-}
 
 .shop-container {
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr 0.3fr 2.2fr 0.7fr;
-    grid-template-rows: 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "Image-of-Product . Buy-Field ." ". . . ." ". . . .";
+    border: 2px solid #1685DE;
 }
 
 .Image-of-Product {
@@ -295,10 +296,14 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 .Name {
     grid-area: Name;
+    color: white;
+    font-family: "Garamond", Arial;
 }
 
 .Description {
     grid-area: Description;
+    color:white;
+    font-family:"Garamond", Arial;
 }
 
 
