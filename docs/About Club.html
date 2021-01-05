@@ -22,20 +22,6 @@
         
     </header>
       
-    <!-- Start der Navigation Bar -->
-    <div id="sidenavigation" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
-        <a href="index.html">Home</a>
-        <a href="About Eichwege.html">About Eichwege</a>
-        <a href="About Club.html">About the Club</a>
-        <a href="Men.html">Men</a>
-        <a href="Women.html">Women</a>
-        <a href="Staff.html">Staff</a>
-        <a href="Webshop.html">Webshop</a>
-        
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <script>
         function openNav() {
             document.getElementById("sidenavigation").style.width = "250px";
@@ -48,6 +34,22 @@
     
     <!-- Start des Content Bereiches innerhalb des Wrappers-->
     <div class="wrapper">
+        
+        <!-- Start der Navigation Bar -->
+        <span class="burgermenu" onclick="openNav()">&#9776;</span>
+        
+        <div id="sidenavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <a href="index.html">Home</a>
+            <a href="About Eichwege.html">About Eichwege</a>
+            <a href="About Club.html">About the Club</a>
+            <a href="Men.html">Men</a>
+            <a href="Women.html">Women</a>
+            <a href="Staff.html">Staff</a>
+            <a href="Webshop.html">Webshop</a>
+        </div>
+        
         <div class="content-wrapper">
             
             <h1 class="headline-txt">About the Club</h1>
