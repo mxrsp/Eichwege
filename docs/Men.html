@@ -43,7 +43,7 @@
         function createTable(xml) {
             var i;
             var xmlDoc = xml.responseXML;
-            var table = "<tr><th align='left'>Last Name</th><th align='left'>First Name</th><th align='left'>Position</th><th align='left'>Birthday</th><th align='left'>Nationality</th><th align='left'>In the club since</th></tr>";
+            var table = "<tr><th align='center'>Last Name</th><th align='center'>First Name</th><th align='center'>Position</th><th align='center'>Birthday</th><th align='center'>Nationality</th><th align='center'>In the club since</th></tr>";
             var x = xmlDoc.getElementsByTagName("row");
             for (i = 0; i < x.length; i++) {
                 table +=
@@ -92,7 +92,7 @@
             </div>
             
             <h1 class="headline-txt">Team - Men</h1>
-            <table id="men" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
+            <table  class="table-format" id="men" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
 
             <script>
                 loadXMLDoc();

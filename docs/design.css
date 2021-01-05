@@ -17,6 +17,21 @@ font-family: Copperplate;
 src: url("https://fontsgeek.com/copperplate-font");
 }
 
+
+
+
+@media screen and (max-width: 1370px) {
+    .header-headline-txt {
+        color: aqua;
+      font-size: 10px;
+    }
+} 
+
+
+
+
+
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -405,8 +420,21 @@ webshop {
 
 
 /* ------------------ Ende Webshop ------------------ */
+
+
+
+
+
+
 /* ------------------ Start Wrapper ------------------ */
 
+
+/* Darstellung der Tabellen */
+.table-format {
+    text-align: center;
+    color: white;
+    border: 1px solid #1685DE;
+}
 
 /* Wrapper für Website */
 .wrapper {

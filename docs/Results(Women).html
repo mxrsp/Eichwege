@@ -43,7 +43,7 @@
         function createTable(xml) {
             var i;
             var xmlDoc = xml.responseXML;
-            var table = "<tr><th align='left'>Home</th><th align='left'>Guest</th><th align='left'>Points-Home</th><th align='left'>Points-Guest</th></tr>";
+            var table = "<tr><th align='center'>Home</th><th align='center'>Guest</th><th align='center'>Points-Home</th><th align='center'>Points-Guest</th></tr>";
             var x = xmlDoc.getElementsByTagName("row");
             for (i = 0; i < x.length; i++) {
                 table +=
@@ -86,7 +86,7 @@
                 <a class="button" href="League_Table(Women).html">League Table</a>
             </div>
             <h1 class="headline-txt">Results(Women)</h1>
-            <table id="results" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
+            <table class="table-format" id="results" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
 
             <script>
                 loadXMLDoc();
