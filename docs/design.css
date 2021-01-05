@@ -236,6 +236,103 @@ src: url("https://fontsgeek.com/copperplate-font");
 /* ------------------ Webshop ------------------ */
 
 
+webshop {
+    margin: 20px auto 20px auto;
+    border: 2px solid #1685DE;
+    display: flex;
+    max-width: 1000px;
+}
+
+.buy {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.market {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5%;
+    color: white;
+    font-family: "Copperplate", Arial;
+}
+
+.description {
+    margin-top: 5%;
+    color: white;
+    font-family:"Copperplate", Arial;
+}
+
+/* Darstellung der Textboxen */
+.size-input {
+    cursor: pointer;
+    margin-right: 4%;
+    color: white;
+    font-family: "Garamond", Arial;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #1685DE;
+    padding: 13px;
+    width: 90px;
+    box-sizing: border-box;
+}
+
+/* Darstellung der Textboxen */
+.amount-input {
+    margin-right: 4%;
+    color: white;
+    font-family: "Garamond", Arial;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #1685DE;
+    padding: 13px;
+    width: 90px;
+    box-sizing: border-box;
+}
+
+/* Darstellung des Submit-Buttons */
+[type="buy"] {
+    font-family: "Copperplate", Arial;
+    text-align: center;
+    min-width: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #1685DE;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    font-weight:700;
+}
+
+/* Darstellung beim hovern über den Submit-Buttons */
+[type="buy"]:hover { 
+    color: black;
+    background: #1685DE; 
+}
+/*
 .shop-container {
     margin-top: 5%;
     display: grid;
@@ -304,7 +401,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     grid-area: Description;
     color:white;
     font-family:"Garamond", Arial;
-}
+}*/
 
 
 /* ------------------ Ende Webshop ------------------ */
