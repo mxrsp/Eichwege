@@ -517,6 +517,16 @@ webshop {
     height: 100%;
 }
 
+
+/* ------------------ Ende Wrapper ------------------ */
+
+
+
+
+
+/* ------------------ Start Contact ------------------ */
+
+
 /* Darstellung des Kontaktformulars */
 form { 
     max-width: 500px; 
@@ -561,7 +571,6 @@ textarea {
     padding-top: 10px;
     padding-bottom: 10px;
     transition: all 0.3s;
-    margin-top:-4px;
     font-weight:700;
 }
 
@@ -575,8 +584,8 @@ textarea {
 .flex-captcha {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 /* Darstellung des Captcha Strings */
@@ -599,7 +608,6 @@ textarea {
 
 /* Darstellung des Eingabefelds für Captcha*/
 #captchaEnter { 
-    margin-top: -20px;
     font-family: "Garamond", Arial;
     font-size: 30px;
     border-radius: 5px;
@@ -612,7 +620,7 @@ textarea {
 }
 
 
-/* ------------------ Ende Wrapper ------------------ */
+/* ------------------ Ende Contact ------------------ */
 
 
 
