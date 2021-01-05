@@ -37,25 +37,31 @@
                     createTable(this);
                 }
             };
-            xmlhttp.open("GET", "XMLData/Fixtures(Men).xml", true);
+            xmlhttp.open("GET", "XMLData/Team(Women).xml", true);
             xmlhttp.send();
         }
         function createTable(xml) {
             var i;
             var xmlDoc = xml.responseXML;
-            var table = "<tr><th align='left'>Home</th><th align='left'>Guest</th><th align='left'>Date</th></tr>";
+            var table = "<tr><th align='left'>Last Name</th><th align='left'>First Name</th><th align='left'>Position</th><th align='left'>Birthday</th><th align='left'>Nationality</th><th align='left'>In the club since</th></tr>";
             var x = xmlDoc.getElementsByTagName("row");
             for (i = 0; i < x.length; i++) {
                 table +=
-                    "<tr><td>" +
-                    x[i].getElementsByTagName("Home")[0].childNodes[0].nodeValue +
+                    "<tr><td>"  +
+                    x[i].getElementsByTagName("Last-Name")[0].childNodes[0].nodeValue +
                     "</td><td>" +
-                    x[i].getElementsByTagName("Guest")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("First-Name")[0].childNodes[0].nodeValue +
                     "</td><td>" +
-                    x[i].getElementsByTagName("Date")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("Position")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("Birthday")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("Nationality")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("In-the-club-since")[0].childNodes[0].nodeValue +
                     "</td></tr>";
             }
-            document.getElementById("fixtures").innerHTML = table;
+            document.getElementById("women").innerHTML = table;
         }
     </script>
 
@@ -80,23 +86,17 @@
         <div class="content-wrapper">
             
             <div class="button-alignment-men-women">
-                <a class="button" href="">Fixtures</a>
-                <a class="button" href="">Results</a>
-                <a class="button" href="">League Table</a>
+                <a class="button" href="Fixtures(Women).html">Fixtures</a>
+                <a class="button" href="Results(Women).html">Results</a>
+                <a class="button" href="League_Table(Women)">League Table</a>
             </div>
             
             <h1 class="headline-txt">Team - Women</h1>
-            <table id="fixtures" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
+            <table id="women" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
 
             <script>
                 loadXMLDoc();
             </script>
-
-            <h1 class="headline-txt">Fixtures - Women</h1>
-            
-            <h1 class="headline-txt">Results - Women</h1>
-            
-            <h1 class="headline-txt">League Table - Women</h1>
         </div>
     </div>
 

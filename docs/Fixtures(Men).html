@@ -22,20 +22,6 @@
 
     </header>
 
-    <!-- Start der Navigation Bar -->
-    <div id="sidenavigation" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <a href="index.html">Home</a>
-        <a href="About Eichwege.html">About Eichwege</a>
-        <a href="About Club.html">About the Club</a>
-        <a href="Fixtures(Men).html">Men</a>
-        <a href="Fixtures(Women).html">Women</a>
-        <a href="Staff.html">Staff</a>
-        <a href="Webshop.html">Webshop</a>
-
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <script>
         function openNav() {
             document.getElementById("sidenavigation").style.width = "250px";
@@ -75,12 +61,29 @@
 
     <!-- Start des Content Bereiches innerhalb des Wrappers-->
     <div class="wrapper">
+	 
+        <!-- Start der Navigation Bar -->
+        <span class="burgermenu" onclick="openNav()">&#9776;</span>
+        
+        <div id="sidenavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <a href="index.html">Home</a>
+            <a href="About Eichwege.html">About Eichwege</a>
+            <a href="About Club.html">About the Club</a>
+            <a href="Men.html">Men</a>
+            <a href="Women.html">Women</a>
+            <a href="Staff.html">Staff</a>
+            <a href="Webshop.html">Webshop</a>
+        </div>
+		
         <div class="content-wrapper">
+            <div class="button-alignment-men-women">
+                <a class="button" href="Men.html">Team</a>
+                <a class="button" href="Results(Men).html">Results</a>
+                <a class="button" href="League_Table(Men).html">League Table</a>
+            </div>
             
-                <div class="button-alignment-men-women">
-                    <a class="button" href="Fixtures(Men)" >Fixtures</a>
-                    <a class="button" href="Results(Men).html">Results</a>
-                </div>
             
             <h1 class="headline-txt">Fixtures</h1>
             <table id="fixtures" width="100%" cellspacing="2" cellpadding="0" border="0"></table>
