@@ -25,6 +25,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 } 
 
 .burgermenu {
+    color: #FFF;
     margin-top: 25px;
     font-size: 50px;
     cursor: pointer;
@@ -33,14 +34,13 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* The side navigation menu */
 .sidenav {
-    border-radius: 15px 15px 15px 15px;
     margin-top: 25px;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: relative;
     z-index: 1;
     left: 0;
-    background-color: #232941;
+    background-color: #515a5a;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.3s;
@@ -48,7 +48,6 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* The navigation menu links */
 .sidenav a {
-    border-bottom: 1px solid #1685DE;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -59,7 +58,6 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: black;
     background-color: #1685DE;
 }
 
@@ -82,7 +80,8 @@ src: url("https://fontsgeek.com/copperplate-font");
 /*-------------------------------------------------------*/
 
 #bg-color {
-	background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);
+	/*background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);*/
+    background: #0211B1;
 }
 
 /* Formatierung für normalen Text */
@@ -264,7 +263,6 @@ webshop {
 .infos {
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
 .shop-pic {
@@ -320,14 +318,13 @@ webshop {
 
 /* Darstellung des Submit-Buttons */
 [type="buy"] {
+    border: 2px solid #1685DE;
     font-family: "Copperplate", Arial;
     text-align: center;
     min-width: 100px;
     width: 100%;
     box-sizing: border-box;
     background: #1685DE;
-    border-radius: 5px;
-    border: 0;
     cursor: pointer;
     color: white;
     font-size: 24px;
@@ -339,8 +336,7 @@ webshop {
 
 /* Darstellung beim hovern über den Submit-Buttons */
 [type="buy"]:hover { 
-    color: black;
-    background: #1685DE; 
+    background: #0211B1;  
 }
 
 
@@ -371,17 +367,16 @@ webshop {
 /* Content Wrapper für Inhalt */
 .content-wrapper {
     min-height: 1200px;
-    background-color: #232941;
+    background-color: #515a5a;
     background-size: auto;
     width: 90%;
     margin: 25px auto 0 auto;
     box-sizing: border-box;
-    border-radius: 15px 15px 15px 15px;
 }
 
 /* Button Design */
 .button {
-    background-color: transparent;
+    background-color: #1685DE; 
     border: 2px solid #1685DE; 
     color: white;
     padding-top: 8px;
@@ -401,9 +396,8 @@ webshop {
 
 /* Wenn man über Button hovert */
 .button:hover {
-    background-color: #1685DE;
-    color: black;
-    cursor: pointer;
+    background-color: #0211B1;
+    cursor: pointer; 
 }
 
 /* Zentrierung des Buttons */
@@ -478,6 +472,7 @@ form {
 
 /* Darstellung der Messagebox */
 textarea {
+    color: white;
     height: 200px;
     line-height: 150%;
     resize: vertical;
@@ -488,8 +483,7 @@ textarea {
     font-family: "Copperplate", Arial;
     width: 100%;
     background: #1685DE;
-    border-radius: 5px;
-    border: 0;
+    border: 2px solid #1685DE;
     cursor: pointer;
     color: white;
     font-size: 24px;
@@ -501,8 +495,7 @@ textarea {
 
 /* Darstellung beim hovern über den Submit-Buttons */
 [type="submit"]:hover { 
-    color: black;
-    background: #1685DE; 
+    background: #0211B1; 
 }
 
 /* Zentrieren des Captchers */
@@ -559,7 +552,7 @@ textarea {
 .site-footer {
     margin-top: 50px;
     height: 120px; 
-    background-color: #232941;
+    background-color: #515a5a;
     box-sizing: border-box;
     box-shadow: 0 0 20px inset;
 }
