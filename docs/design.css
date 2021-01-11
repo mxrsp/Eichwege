@@ -355,6 +355,10 @@ webshop {
     text-align: center;
     color: white;
     border: 1px solid #1685DE;
+	width:100%;
+	cellspacing:2;
+	cellpadding:0;
+	border:0;
 }
 
 /* Wrapper für Website */
