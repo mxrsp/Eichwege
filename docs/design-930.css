@@ -268,7 +268,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     max-width: 1000px;
 }
 
-.buy {
+.buy-field {
     margin-top: 0;
     display: flex;
     align-items: center;
