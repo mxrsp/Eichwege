@@ -60,7 +60,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     .sidenav {
         position:absolute;
     }
-	webshop {
+	.webshop {
 		flex-direction:column;
 	}
 	
@@ -261,7 +261,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 /* ------------------ Webshop ------------------ */
 
 
-webshop {
+.webshop {
     margin: 20px auto 20px auto;
     border: 2px solid #1685DE;
     display: flex;
