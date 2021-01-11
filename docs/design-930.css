@@ -19,7 +19,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 28em) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
@@ -46,7 +46,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30em) {
     /* horizontal scrollbar for tables if mobile screen */
 	.table-format {
 		display: block;
@@ -56,7 +56,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 		display:none;
 	}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 47em) {
     .sidenav {
         position:absolute;
     }
