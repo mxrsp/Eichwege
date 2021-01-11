@@ -19,7 +19,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 28em) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
@@ -81,7 +81,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 #bg-color {
 	/*background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);*/
-    background: #0211B1;
+	background: rgba(2, 17, 177, 0.5);
 }
 
 /* Formatierung für normalen Text */
@@ -241,14 +241,14 @@ src: url("https://fontsgeek.com/copperplate-font");
 /* ------------------ Webshop ------------------ */
 
 
-webshop {
+.webshop {
     margin: 20px auto 20px auto;
     border: 2px solid #1685DE;
     display: flex;
     max-width: 1000px;
 }
 
-.buy {
+.buy-field {
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -355,6 +355,9 @@ webshop {
     text-align: center;
     color: white;
     border: 1px solid #1685DE;
+	width: 100%;
+	cellspacing: 2;
+	cellpadding: 0;
 }
 
 /* Wrapper für Website */
@@ -383,14 +386,14 @@ webshop {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 99%;
+    font-size: 105%;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
 	font-family: "Garamond", Arial;
 	letter-spacing: 2px;
-	height: 5%;
-    width: 15%;
+	height: 35px;
+    width: 150px;
     margin: 0 25px 0 25px;
 }
 
