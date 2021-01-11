@@ -301,6 +301,7 @@ webshop {
     margin-top: 5%;
     color: white;
     font-family:"Copperplate", Arial;
+    margin-bottom: 5%;
 }
 
 /* Darstellung der Textboxen */
@@ -375,8 +376,10 @@ webshop {
     text-align: center;
     color: white;
     border: 1px solid #1685DE;
+    width: 100%;
+	cellspacing: 2;
+	cellpadding: 0;
 }
-
 
 /* Wrapper für Website */
 .wrapper {

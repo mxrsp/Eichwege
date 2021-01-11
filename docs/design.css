@@ -355,10 +355,9 @@ webshop {
     text-align: center;
     color: white;
     border: 1px solid #1685DE;
-	width:100%;
-	cellspacing:2;
-	cellpadding:0;
-	border:0;
+	width: 100%;
+	cellspacing: 2;
+	cellpadding: 0;
 }
 
 /* Wrapper für Website */
@@ -387,14 +386,14 @@ webshop {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 99%;
+    font-size: 105%;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
 	font-family: "Garamond", Arial;
 	letter-spacing: 2px;
-	height: 5%;
-    width: 15%;
+	height: 35px;
+    width: 150px;
     margin: 0 25px 0 25px;
 }
 
