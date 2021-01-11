@@ -129,7 +129,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     font-family: "Copperplate", Arial;
     color: white;
     text-align: center;
-    margin: 70px auto auto 30px;
+    margin: auto;
 }
 
 /* Header Bild für Home */
@@ -366,7 +366,7 @@ webshop {
 
 /* Content Wrapper für Inhalt */
 .content-wrapper {
-    min-height: 1200px;
+    min-height: auto;
     background-color: #515a5a;
     background-size: auto;
     width: 90%;
@@ -383,14 +383,14 @@ webshop {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 99%;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
 	font-family: "Garamond", Arial;
 	letter-spacing: 2px;
-	height: 30px;
-    width: 150px;
+	height: 5%;
+    width: 15%;
     margin: 0 25px 0 25px;
 }
 

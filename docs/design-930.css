@@ -46,6 +46,23 @@ src: url("https://fontsgeek.com/copperplate-font");
     transition: 0.3s;
 }
 
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+	.table-format {
+		display: block;
+		overflow-x: auto;
+	}
+}
+@media only screen and (max-width: 767px) {
+    .sidenav {
+        position:absolute;
+    }
+	webshop {
+		flex-direction:column;
+	}
+	
+}
+
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -125,11 +142,11 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* Überschrift im Header */
 .header-headline-txt {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Copperplate", Arial;
     color: white;
     text-align: center;
-    margin: 70px auto auto 30px;
+    margin: auto;
 }
 
 /* Header Bild für Home */
@@ -357,6 +374,7 @@ webshop {
     border: 1px solid #1685DE;
 }
 
+
 /* Wrapper für Website */
 .wrapper {
     min-height: calc(100vh - 5em - 6px);
@@ -366,7 +384,7 @@ webshop {
 
 /* Content Wrapper für Inhalt */
 .content-wrapper {
-    min-height: 1200px;
+    min-height: auto;
     background-color: #515a5a;
     background-size: auto;
     width: 90%;
@@ -383,13 +401,13 @@ webshop {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 99%;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
 	font-family: "Garamond", Arial;
 	letter-spacing: 2px;
-	height: 30px;
+	height: 35px;
     width: 150px;
     margin: 0 25px 0 25px;
 }
