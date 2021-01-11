@@ -223,3 +223,14 @@ You have to frame the logo using the accent color. <br>
 The font have to be "Copperplate" and on both sides of the oak add a oak leaf. <br>
 Also make sure that you use the base color as the main blue. <br>
 ![Club logo](icon.JPG)
+
+<br>_________________________________________<br>
+### Task allocation
+Responsive Design: Max, Marvin<br>
+Webshop: Max<br>
+Navigattion bar: Max<br>
+XML tables: Max<br>
+Website structure: Marvin<br>
+Contact form: Marvin<br>
+SVG Logo: Marvin
+
