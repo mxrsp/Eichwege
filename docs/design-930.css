@@ -101,7 +101,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 #bg-color {
 	/*background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);*/
-    background: #0211B1;
+    background: rgba(2, 17, 177, 0.5);
 }
 
 /* Formatierung für normalen Text */
