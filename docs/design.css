@@ -9,7 +9,7 @@ html, body {
 
 @font-face {
 font-family: Garamond;
-src: url("https://fonts.google.com/specimen/EB+Garamond?query=Gara#standard-styles");
+src: url("https://allfont.de/allfont.css?fonts=garamond");
 }
 
 @font-face {
@@ -24,10 +24,31 @@ src: url("https://fontsgeek.com/copperplate-font");
   .sidenav a {font-size: 18px;}
 } 
 
+@media only screen and (max-width: 30em) {
+	    /* horizontal scrollbar for tables if mobile screen */
+		.table-format {
+			display: block;
+			overflow-x: auto;
+		}
+		.footer-headline-txt {
+			display:none;
+		}
+	}
+	@media only screen and (max-width: 47em) {
+	    .sidenav {
+	        position:absolute;
+	    }
+		.webshop {
+			flex-direction:column;
+		}
+		
+	}
+	
+
 .burgermenu {
     color: #FFF;
     margin-top: 25px;
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     position: absolute;
 }
@@ -125,7 +146,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* Überschrift im Header */
 .header-headline-txt {
-    font-size: 50px;
+    font-size: 30px;
     font-family: "Copperplate", Arial;
     color: white;
     text-align: center;
@@ -266,7 +287,7 @@ src: url("https://fontsgeek.com/copperplate-font");
 }
 
 .shop-pic {
-    height: 320px;
+    height: 250px;
 }
 
 .name {
@@ -281,6 +302,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     margin-top: 5%;
     color: white;
     font-family:"Copperplate", Arial;
+	margin-bottom: 5%;
 }
 
 /* Darstellung der Textboxen */
@@ -386,7 +408,7 @@ src: url("https://fontsgeek.com/copperplate-font");
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 105%;
+    font-size: 99%;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
