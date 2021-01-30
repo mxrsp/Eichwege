@@ -17,7 +17,15 @@ font-family: Copperplate;
 src: url("https://fontsgeek.com/copperplate-font");
 }
 
-
+/* nav */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+   
+.breadcrumb-txt {
+	font-size: 100%;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 28em) {
   .sidenav {padding-top: 15px;}
@@ -44,53 +52,11 @@ src: url("https://fontsgeek.com/copperplate-font");
 		
 	}
 	
-
-.burgermenu {
-    color: #FFF;
-    margin-top: 25px;
-    font-size: 40px;
-    cursor: pointer;
-    position: absolute;
+#main-navigation {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
-
-/* The side navigation menu */
-.sidenav {
-    margin-top: 25px;
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: relative;
-    z-index: 1;
-    left: 0;
-    background-color: #515a5a;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.3s;
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    background-color: #1685DE;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -130,8 +96,8 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* Logo im Header */
 .logo-header {
-    height: 190px;
-    margin-left: 30px;
+    height: 90%;
+    margin-left: 15%;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;

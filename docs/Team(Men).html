@@ -21,29 +21,37 @@
         <p class="header-headline-txt">Blau-Weiss Eichwege SV</p>
 
     </header>
+  
+    <breadcrumb>
+        <p class="breadcrumb-txt"> Home -> Men -> Team </p>
+    </breadcrumb>
 
-    <!-- Start der Navigation Bar -->
-    <div id="sidenavigation" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <a href="index.html">Home</a>
-        <a href="About_Eichwege.html">About Eichwege</a>
-        <a href="About_Club.html">About the Club</a>
-        <a href="Team(Men).html">Men</a>
-        <a href="Team(Women).html">Women</a>
-        <a href="Staff.html">Staff</a>
-        <a href="Webshop.html">Webshop</a>
-
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <nav>
+        <ul>
+            <li class="button">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="button">
+                <a href="About_Eichwege.html">About Eichwege</a>
+            </li>
+            <li class="button">
+                <a href="About_Club.html">About the Club</a>
+            </li>
+            <li class="button">
+                <a href="Men.html">Men</a>
+            </li>
+            <li class="button">
+                <a href="Women.html">Women</a>
+            </li>
+            <li class="button">
+                <a href="Staff.html">Staff</a>
+            </li>
+            <li class="button">
+                <a href="Webshop.html">Webshop</a>
+            </li>
+        </ul>
+    </nav>
     <script>
-        function openNav() {
-            document.getElementById("sidenavigation").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("sidenavigation").style.width = "0";
-        }
         function loadXMLDoc() {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
@@ -76,12 +84,12 @@
     <!-- Start des Content Bereiches innerhalb des Wrappers-->
     <div class="wrapper">
         <div class="content-wrapper">
-            
-                <div class="button-alignment-men-women">
-                    <a class="button" href="Fixtures(Men)">Fixtures</a>
-                    <a class="button" href="Results(Men).html">Results</a>
-                </div>
-            
+
+            <div class="button-alignment-men-women">
+                <a class="button" href="Fixtures(Men)">Fixtures</a>
+                <a class="button" href="Results(Men).html">Results</a>
+            </div>
+
             <h1 class="headline-txt">Fixtures</h1>
             <table id="fixtures"></table>
 

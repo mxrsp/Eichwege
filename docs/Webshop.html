@@ -23,14 +23,36 @@
 
     </header>
 
-    <script>
-        function openNav() {
-            document.getElementById("sidenavigation").style.width = "250px";
-        }
+    <breadcrumb>
+        <p class="breadcrumb-txt"> Home -> Webshop </p>
+    </breadcrumb>
 
-        function closeNav() {
-            document.getElementById("sidenavigation").style.width = "0";
-        }
+    <nav>
+        <ul>
+            <li class="button">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="button">
+                <a href="About_Eichwege.html">About Eichwege</a>
+            </li>
+            <li class="button">
+                <a href="About_Club.html">About the Club</a>
+            </li>
+            <li class="button">
+                <a href="Men.html">Men</a>
+            </li>
+            <li class="button">
+                <a href="Women.html">Women</a>
+            </li>
+            <li class="button">
+                <a href="Staff.html">Staff</a>
+            </li>
+            <li class="button">
+                <a href="Webshop.html">Webshop</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
         function send() {
             alert("Dankschön");
         }
@@ -39,21 +61,6 @@
     <!-- Start des Content Bereiches innerhalb des Wrappers-->
     <div class="wrapper">
 
-        <!-- Start der Navigation Bar -->
-        <span class="burgermenu" onclick="openNav()">&#9776;</span>
-
-        <div id="sidenavigation" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            <a href="index.html">Home</a>
-            <a href="About_Eichwege.html">About Eichwege</a>
-            <a href="About_Club.html">About the Club</a>
-            <a href="Men.html">Men</a>
-            <a href="Women.html">Women</a>
-            <a href="Staff.html">Staff</a>
-            <a href="Webshop.html">Webshop</a>
-        </div>
-
         <div class="content-wrapper">
 
             <h1 class="headline-txt">Webshop</h1>
@@ -61,18 +68,18 @@
             <p class="normal-txt">
                 In this Web Shop we will soon give you the opportunity to buy the tickets to our games online. Also we are planning on selling merchandise so that you can support us.
             </p>
-            
+
             <div class="webshop">
-                
+
                 <img class="shop-pic" src="SVG/Logo-BWE-SV-final.svg" alt="Logo of the club">
-                
+
                 <div class="market">
-                    
+
                     <div class="infos">
                         <p class="name">NICE ITEM</p>
                         <p class="description">What can it do? Well, it's a product that can do a lot and we recommend buying it!</p>
                     </div>
-                    
+
                     <div class="buy-field">
                         <select name="size" class="size-input">
                             <option value="S">S</option>
@@ -80,26 +87,26 @@
                             <option value="L">L</option>
                             <option value="XXL">XXL</option>
                         </select>
-                
-                        <input name="amount" type="text" class="amount-input" placeholder="Amount"/>
-                        <input type="submit" value="BUY" onClick="send()"/>
+
+                        <input name="amount" type="text" class="amount-input" placeholder="Amount" />
+                        <input type="submit" value="BUY" onClick="send()" />
                     </div>
-                
+
                 </div>
-                    
+
             </div>
-            
+
             <div class="webshop">
-                
+
                 <img class="shop-pic" src="SVG/Logo-BWE-SV-final.svg" alt="Logo of the club">
-                
+
                 <div class="market">
-                    
+
                     <div class="infos">
                         <p class="name">NICE ITEM</p>
                         <p class="description">What can it do? Well, it's a product that can do a lot and we recommend buying it!</p>
                     </div>
-                    
+
                     <div class="buy-field">
                         <select name="size" class="size-input">
                             <option value="S">S</option>
@@ -107,13 +114,13 @@
                             <option value="L">L</option>
                             <option value="XXL">XXL</option>
                         </select>
-                
-                        <input name="amount" type="text" class="amount-input" placeholder="Amount"/>
-                        <input type="submit" value="BUY" onClick="send()"/>
+
+                        <input name="amount" type="text" class="amount-input" placeholder="Amount" />
+                        <input type="submit" value="BUY" onClick="send()" />
                     </div>
-                
+
                 </div>
-                    
+
             </div>
 
             <!--

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -12,26 +12,48 @@
 </head>
 
 <body id="bg-color">
-    
+
     <!-- Header Image -->
     <header class="header-img-fixtures">
-        
+
         <a href="index.html">
             <img class="logo-header" src="SVG/Logo-BWE-SV-final.svg" alt="Logo of the club">
         </a>
         <p class="header-headline-txt">Blau-Weiss Eichwege SV</p>
-        
+
     </header>
 
-    <script>
-        function openNav() {
-            document.getElementById("sidenavigation").style.width = "250px";
-        }
+    <breadcrumb>
+        <p class="breadcrumb-txt"> Home -> Women -> Fixtures </p>
+    </breadcrumb>
 
-        function closeNav() {
-            document.getElementById("sidenavigation").style.width = "0";
-        }
-		function loadXMLDoc() {
+    <nav>
+        <ul>
+            <li class="button">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="button">
+                <a href="About_Eichwege.html">About Eichwege</a>
+            </li>
+            <li class="button">
+                <a href="About_Club.html">About the Club</a>
+            </li>
+            <li class="button">
+                <a href="Men.html">Men</a>
+            </li>
+            <li class="button">
+                <a href="Women.html">Women</a>
+            </li>
+            <li class="button">
+                <a href="Staff.html">Staff</a>
+            </li>
+            <li class="button">
+                <a href="Webshop.html">Webshop</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        function loadXMLDoc() {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -59,54 +81,39 @@
             document.getElementById("fixtures").innerHTML = table;
         }
     </script>
-    
+
     <!-- Start des Content Bereiches innerhalb des Wrappers-->
     <div class="wrapper">
-	 
-        <!-- Start der Navigation Bar -->
-        <span class="burgermenu" onclick="openNav()">&#9776;</span>
-        
-        <div id="sidenavigation" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
-            <a href="index.html">Home</a>
-            <a href="About_Eichwege.html">About Eichwege</a>
-            <a href="About_Club.html">About the Club</a>
-            <a href="Men.html">Men</a>
-            <a href="Women.html">Women</a>
-            <a href="Staff.html">Staff</a>
-            <a href="Webshop.html">Webshop</a>
-        </div>
-		
+
         <div class="content-wrapper">
-			
-			<div class="button-alignment-men-women">
+
+            <div class="button-alignment-men-women">
                 <a class="button" href="Women.html">Team</a>
                 <a class="button" href="Results(Women).html">Results</a>
                 <a class="button" href="League_Table(Women).html">League Table</a>
             </div>
-            
+
             <h1 class="headline-txt">Fixtures</h1>
             <table class="table-format" id="fixtures"></table>
 
             <script>
                 loadXMLDoc();
             </script>
-            
+
         </div>
     </div>
-    
+
     <!-- Start des Footer Bereiches -->
-    <footer class="site-footer"> 
+    <footer class="site-footer">
 
         <div class="flex-layout">
-            
+
             <img class="logo-footer" src="SVG/Logo-BWE-SV-final.svg" alt="Logo of the club">
             <p class="footer-headline-txt">Blau-Weiss Eichwege SV</p>
-            <a class="footer-normal-txt" href="Contact.html">Contact</a> 
-          
-        </div>     
+            <a class="footer-normal-txt" href="Contact.html">Contact</a>
+
+        </div>
     </footer>
-    
+
 </body>    
 </html>

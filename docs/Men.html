@@ -23,14 +23,38 @@
 
     </header>
 
-    <script>
-        function openNav() {
-            document.getElementById("sidenavigation").style.width = "250px";
-        }
+    <breadcrumb>
+        <p class="breadcrumb-txt"> Home -> Men</p>
+    </breadcrumb>
 
-        function closeNav() {
-            document.getElementById("sidenavigation").style.width = "0";
-        }
+    <nav>
+        <ul>
+            <li class="button">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="button">
+                <a href="About_Eichwege.html">About Eichwege</a>
+            </li>
+            <li class="button">
+                <a href="About_Club.html">About the Club</a>
+            </li>
+            <li class="button">
+                <a href="Men.html">Men</a>
+            </li>
+            <li class="button">
+                <a href="Women.html">Women</a>
+            </li>
+            <li class="button">
+                <a href="Staff.html">Staff</a>
+            </li>
+            <li class="button">
+                <a href="Webshop.html">Webshop</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+
         function loadXMLDoc() {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
@@ -48,7 +72,7 @@
             var x = xmlDoc.getElementsByTagName("row");
             for (i = 0; i < x.length; i++) {
                 table +=
-                    "<tr><td>"  +
+                    "<tr><td>" +
                     x[i].getElementsByTagName("Last-Name")[0].childNodes[0].nodeValue +
                     "</td><td>" +
                     x[i].getElementsByTagName("First-Name")[0].childNodes[0].nodeValue +
@@ -68,30 +92,15 @@
 
     <!-- Start des Content Bereiches innerhalb des Wrappers-->
     <div class="wrapper">
-        
-        <!-- Start der Navigation Bar -->
-        <span class="burgermenu" onclick="openNav()">&#9776;</span>
-        
-        <div id="sidenavigation" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
-            <a href="index.html">Home</a>
-            <a href="About_Eichwege.html">About Eichwege</a>
-            <a href="About_Club.html">About the Club</a>
-            <a href="Men.html">Men</a>
-            <a href="Women.html">Women</a>
-            <a href="Staff.html">Staff</a>
-            <a href="Webshop.html">Webshop</a>
-        </div>
-        
+
         <div class="content-wrapper">
-            
+
             <div class="button-alignment-men-women">
                 <a class="button" href="Fixtures(Men).html">Fixtures</a>
                 <a class="button" href="Results(Men).html">Results</a>
                 <a class="button" href="League_Table(Men).html">League Table</a>
             </div>
-            
+
             <h1 class="headline-txt">Team - Men</h1>
             <table class="table-format" id="men"></table>
 
