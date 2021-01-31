@@ -22,6 +22,13 @@ nav ul {
   display: flex;
   justify-content: space-between;
 }
+
+.button .active {
+	background-color:blue;
+}
+.li a {
+    display : block;
+}
    
 .breadcrumb-txt {
 	font-size: 100%;
