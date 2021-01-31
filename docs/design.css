@@ -19,20 +19,22 @@ src: url("https://fontsgeek.com/copperplate-font");
 
 /* nav */
 nav ul {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-.button .active {
-	background-color:blue;
-}
 .li a {
-    display : block;
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
 }
    
 .breadcrumb-txt {
 	font-size: 100%;
 }
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 28em) {
   .sidenav {padding-top: 15px;}
@@ -41,23 +43,31 @@ nav ul {
 
 @media only screen and (max-width: 30em) {
 	    /* horizontal scrollbar for tables if mobile screen */
-		.table-format {
+    .table-format {
 			display: block;
 			overflow-x: auto;
 		}
 		.footer-headline-txt {
 			display:none;
 		}
-	}
-	@media only screen and (max-width: 47em) {
+}
+
+@media only screen and (max-width: 47em) {
 	    .sidenav {
 	        position:absolute;
 	    }
 		.webshop {
 			flex-direction:column;
-		}
-		
-	}
+		}	
+}
+
+@media only screen and (max-width: 41em) {
+    .header-headline-txt {
+        display: none;
+    }
+}
+    
+ 
 	
 #main-navigation {
 	display:flex;
@@ -74,15 +84,15 @@ nav ul {
 /*-------------------------------------------------------*/
 
 #bg-color {
-	/*background: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);*/
-	background: rgba(2, 17, 177, 0.5);
+	/*ckground: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);*/
+    /*ckground: linear-gradient(90deg, rgba(2,17,177,1) 0%, rgba(28,28,28,1) 100%);*/
+	background: rgba(2, 17, 177, 1);*/
 }
-
 /* Formatierung für normalen Text */
 .normal-txt {
     font-size: 20px;
     font-family: "Garamond", Arial;
-    color: white;
+    color: black;
     text-align: center;
     padding: 2%; 
 }
@@ -92,7 +102,7 @@ nav ul {
     font-size: 45px;
     font-weight: lighter;
     font-family: "Copperplate", Arial;
-    color: white;
+    color: black;
     text-align: center;
     padding: 3%; 
 }
@@ -103,6 +113,7 @@ nav ul {
 
 /* Logo im Header */
 .logo-header {
+    display: block;
     height: 90%;
     margin-left: 15%;
     -webkit-transition-duration: 0.2s;
@@ -119,11 +130,10 @@ nav ul {
 
 /* Überschrift im Header */
 .header-headline-txt {
-    font-size: 30px;
     font-family: "Copperplate", Arial;
     color: white;
     text-align: center;
-    margin: auto;
+    margin: auto 5% auto 0;
 }
 
 /* Header Bild für Home */
@@ -224,9 +234,142 @@ nav ul {
     box-shadow: 0 0 20px ;
 }
 
+/* Button Design */
+.nav-button {
+    background-color: #CAD0CD; 
+    border: 1px solid #000000;
+    color: black;
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 99%;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	font-family: "Garamond", Arial;
+	letter-spacing: 2px;
+	height: 2em;
+    width: 10em;
+}
+
+/* Wenn man über Button hovert */
+.nav-button:hover {
+    background-color: #1685DE;
+    cursor: pointer; 
+}
+
+.nav-button-flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2% 5% 0 5%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
 
 /* ------------------ Ende Header ------------------ */
 
+
+
+
+
+
+/* ------------------ Start Wrapper ------------------ */
+
+
+/* Darstellung der Tabellen */
+.table-format {
+    text-align: center;
+    color: white;
+    border: 1px solid #1685DE;
+	width: 100%;
+	cellspacing: 2;
+	cellpadding: 0;
+}
+
+/* Wrapper für Website */
+.wrapper {
+    min-height: calc(100vh - 5em - 6px);
+    display: flex;
+    flex-direction: row;
+}
+
+/* Content Wrapper für Inhalt */
+.content-wrapper {
+    min-height: auto;
+    background-color: #CAD0CD;
+    background-size: auto;
+    width: 90%;
+    margin: 25px auto 0 auto;
+    box-sizing: border-box;
+}
+
+/* Button Design */
+.button {
+    background-color: #1685DE; 
+    border: 1px solid #1685DE; 
+    color: black;
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 99%;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	font-family: "Garamond", Arial;
+	letter-spacing: 2px;
+	height: 35px;
+    width: 150px;
+    margin: 0 25px 0 25px;
+}
+
+/* Wenn man über Button hovert */
+.button:hover {
+    background-color: #5dadef;
+    cursor: pointer; 
+}
+
+/* Zentrierung des Buttons */
+.button-alignment {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Zentrierung der Button */
+.button-alignment-men-women {
+    margin: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Spielerei um iframe zu zentrieren */
+ .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe,  
+.video-wrapper object,  
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------ Ende Wrapper ------------------ */
 
 
 
@@ -313,7 +456,7 @@ nav ul {
 
 /* Darstellung des Submit-Buttons */
 [type="buy"] {
-    border: 2px solid #1685DE;
+    border: 1px solid #1685DE;
     font-family: "Copperplate", Arial;
     text-align: center;
     min-width: 100px;
@@ -338,104 +481,6 @@ nav ul {
 /* ------------------ Ende Webshop ------------------ */
 
 
-
-
-
-
-/* ------------------ Start Wrapper ------------------ */
-
-
-/* Darstellung der Tabellen */
-.table-format {
-    text-align: center;
-    color: white;
-    border: 1px solid #1685DE;
-	width: 100%;
-	cellspacing: 2;
-	cellpadding: 0;
-}
-
-/* Wrapper für Website */
-.wrapper {
-    min-height: calc(100vh - 5em - 6px);
-    display: flex;
-    flex-direction: row;
-}
-
-/* Content Wrapper für Inhalt */
-.content-wrapper {
-    min-height: auto;
-    background-color: #515a5a;
-    background-size: auto;
-    width: 90%;
-    margin: 25px auto 0 auto;
-    box-sizing: border-box;
-}
-
-/* Button Design */
-.button {
-    background-color: #1685DE; 
-    border: 2px solid #1685DE; 
-    color: white;
-    padding-top: 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 99%;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-	font-family: "Garamond", Arial;
-	letter-spacing: 2px;
-	height: 35px;
-    width: 150px;
-    margin: 0 25px 0 25px;
-}
-
-/* Wenn man über Button hovert */
-.button:hover {
-    background-color: #0211B1;
-    cursor: pointer; 
-}
-
-/* Zentrierung des Buttons */
-.button-alignment {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Zentrierung der Button */
-.button-alignment-men-women {
-    margin: 20px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Spielerei um iframe zu zentrieren */
- .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-wrapper iframe,  
-.video-wrapper object,  
-.video-wrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-/* ------------------ Ende Wrapper ------------------ */
 
 
 
@@ -481,7 +526,7 @@ textarea {
     font-family: "Copperplate", Arial;
     width: 100%;
     background: #1685DE;
-    border: 2px solid #1685DE;
+    border: 1px solid #1685DE;
     cursor: pointer;
     color: white;
     font-size: 24px;
@@ -550,7 +595,7 @@ textarea {
 .site-footer {
     margin-top: 50px;
     height: 120px; 
-    background-color: #515a5a;
+    background-color: #CAD0CD;
     box-sizing: border-box;
     box-shadow: 0 0 20px inset;
 }
@@ -573,7 +618,7 @@ textarea {
     position: relative;
     font-size: 20px;
     font-family: "Copperplate", Arial;
-    color: white;
+    color: black;
     text-align: center;
     margin: 49px auto auto auto;
 }
@@ -582,7 +627,7 @@ textarea {
 .footer-normal-txt {
     font-size: 20px;
     font-family: "Garamond", Arial;
-    color: white;
+    color: black;
     text-align: center;
     margin: 43px auto auto auto;
     text-decoration: none;
