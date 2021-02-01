@@ -482,9 +482,9 @@ nav ul {
 }
 
 /* Darstellung beim hovern über den Submit-Buttons */
-[type="buy"]:hover { 
-    background: #0211B1;  
-}
+    [type="buy"]:hover {
+        background: #5dadef;
+    }
 
 
 /* ------------------ Ende Webshop ------------------ */
@@ -546,9 +546,9 @@ textarea {
 }
 
 /* Darstellung beim hovern über den Submit-Buttons */
-[type="submit"]:hover { 
-    background: #0211B1; 
-}
+    [type="submit"]:hover {
+        background: #5dadef;
+    }
 
 /* Zentrieren des Captchers */
 .flex-captcha {
