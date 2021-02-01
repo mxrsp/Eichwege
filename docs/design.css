@@ -396,12 +396,15 @@ nav ul {
         border: 2px solid #1685DE;
         display: flex;
         max-width: 1000px;
+        flex-wrap:wrap;
     }
+
 
     .buy-field {
         margin-top: 0;
         display: flex;
         align-items: center;
+        flex-wrap:wrap;
     }
 
     .market {
