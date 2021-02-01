@@ -416,7 +416,8 @@ nav ul {
     }
 
     .shop-pic {
-        height: 250px;
+        height: 99%;
+        width: 99%;
     }
 
     .name {
