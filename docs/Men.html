@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE XHTML>
-<html xml:lang="en">
+<html lang="en">
 
 <head>
 
@@ -32,36 +32,33 @@
 
     </header>
 
-    <breadcrumb>
-        <p class="breadcrumb-txt"> Home -> Men</p>
-    </breadcrumb>
 
     <nav>
-        <ul>
-            <li class="button">
-                <a href="index.html">Home</a>
+        <ul class="nav-button-flex">
+
+            <li>
+                <a class="nav-button" href="index.html">Home</a>
             </li>
-            <li class="button">
-                <a href="About_Eichwege.html">About Eichwege</a>
+            <li>
+                <a class="nav-button" href="About_Eichwege.html">About Eichwege</a>
             </li>
-            <li class="button">
-                <a href="About_Club.html">About the Club</a>
+            <li>
+                <a class="nav-button" href="About_Club.html">About the Club</a>
             </li>
-            <li class="button">
-                <a href="Men.html">Men</a>
+            <li>
+                <a class="nav-button">Men</a>
             </li>
-            <li class="button">
-                <a href="Women.html">Women</a>
+            <li>
+                <a class="nav-button" href="Women.html">Women</a>
             </li>
-            <li class="button">
-                <a href="Staff.html">Staff</a>
+            <li>
+                <a class="nav-button" href="Staff.html">Staff</a>
             </li>
-            <li class="button">
-                <a href="Webshop.html">Webshop</a>
+            <li>
+                <a class="nav-button" href="Webshop.html">Webshop</a>
             </li>
         </ul>
     </nav>
-
     <script>
 
         function loadXMLDoc() {
@@ -103,6 +100,10 @@
     <div class="wrapper">
 
         <div class="content-wrapper">
+            <breadcrumb>
+                <p class="breadcrumb-txt"> <a href="index.html">Home</a> -> Men</p>
+            </breadcrumb>
+
 
             <div class="button-alignment-men-women">
                 <a class="button" href="Fixtures(Men).html">Fixtures</a>
@@ -111,6 +112,9 @@
             </div>
 
             <h1 class="headline-txt">Team - Men</h1>
+            <noscript>
+                <h2 class="headline-txt"> <a href="XMLDATA/Team(Men).xml" target="_blank" rel="noopener noreferrer">Open</a></h2>"
+            </noscript>
             <table class="table-format" id="men"></table>
 
             <script>

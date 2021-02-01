@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE XHTML>
-<html xml:lang="en">
+<html lang="en">
 
 <head>
     
@@ -32,32 +32,31 @@
 
     </header>
 
-    <breadcrumb>
-        <p class="breadcrumb-txt"> Home -> Webshop </p>
-    </breadcrumb>
+
 
     <nav>
-        <ul>
-            <li class="button">
-                <a href="index.html">Home</a>
+        <ul class="nav-button-flex">
+
+            <li>
+                <a class="nav-button" href="index.html">Home</a>
             </li>
-            <li class="button">
-                <a href="About_Eichwege.html">About Eichwege</a>
+            <li>
+                <a class="nav-button" href="About_Eichwege.html">About Eichwege</a>
             </li>
-            <li class="button">
-                <a href="About_Club.html">About the Club</a>
+            <li>
+                <a class="nav-button" href="About_Club.html">About the Club</a>
             </li>
-            <li class="button">
-                <a href="Men.html">Men</a>
+            <li>
+                <a class="nav-button" href="Men.html">Men</a>
             </li>
-            <li class="button">
-                <a href="Women.html">Women</a>
+            <li>
+                <a class="nav-button" href="Women.html">Women</a>
             </li>
-            <li class="button">
-                <a href="Staff.html">Staff</a>
+            <li>
+                <a class="nav-button" href="Staff.html">Staff</a>
             </li>
-            <li class="button">
-                <a href="Webshop.html">Webshop</a>
+            <li>
+                <a class="nav-button">Webshop</a>
             </li>
         </ul>
     </nav>
@@ -71,6 +70,9 @@
     <div class="wrapper">
 
         <div class="content-wrapper">
+            <breadcrumb>
+                <p class="breadcrumb-txt"> <a href="index.html">Home</a> -> Webshop </p>
+            </breadcrumb>
 
             <h1 class="headline-txt">Webshop</h1>
 
@@ -85,20 +87,23 @@
                 <div class="market">
 
                     <div class="infos">
-                        <p class="name">NICE ITEM</p>
+                        <h2 class="name">NICE ITEM</h2>
                         <p class="description">What can it do? Well, it's a product that can do a lot and we recommend buying it!</p>
                     </div>
 
                     <div class="buy-field">
-                        <select name="size" class="size-input">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XXL">XXL</option>
-                        </select>
-
-                        <input name="amount" type="text" class="amount-input" placeholder="Amount" />
-                        <input type="submit" value="BUY" onClick="send()" />
+                        <label title="Select formular input title.">
+                            <select name="size" class="size-input">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </label>
+                        <label for="amount1" title="Put your amount here." id="amountLabel" class="sr-only">Amount</label>
+                        <input name="amount" type="text" class="amount-input" placeholder="Amount" id="amount1" />
+                        <label for="submit" title="Submit your order." id="amountLabel" class="sr-only">Submit</label>
+                        <input type="submit" value="BUY" onClick="send()" id="submit" />
                     </div>
 
                 </div>
@@ -112,52 +117,56 @@
                 <div class="market">
 
                     <div class="infos">
-                        <p class="name">NICE ITEM</p>
+                        <h2 class="name">NICE ITEM</h2>
                         <p class="description">What can it do? Well, it's a product that can do a lot and we recommend buying it!</p>
                     </div>
 
                     <div class="buy-field">
-                        <select name="size" class="size-input">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XXL">XXL</option>
-                        </select>
-
-                        <input name="amount" type="text" class="amount-input" placeholder="Amount" />
-                        <input type="submit" value="BUY" onClick="send()" />
+                        <label title="Select formular input title.">
+                            <select name="size" class="size-input">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </label>
+                        <label for="amount2" title="Put your amount here." id="amountLabel" class="sr-only">Amount</label>
+                        <input name="amount" type="text" class="amount-input" placeholder="Amount" id="amount2" />
+                        <label for="submit" title="Submit your order." id="amountLabel" class="sr-only">Submit</label>
+                        <input type="submit" value="BUY" onClick="send()" id="submit" />
                     </div>
 
                 </div>
 
             </div>
 
+
             <!--
-            <div class="shop-container">
-                <div class="Image-of-Product">
-                    <div class="Img"> <img src="SVG/Logo-BWE-SV-final.svg"></div>
-                </div>
-                <div class="Buy-Field">
-                    <div class="Size-Select">
-                        <select name="title" class="formular-input">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XXL">XXL</option>
-                        </select>
-                    </div>
-                    <div class="Amount">
-                        <input name="Amount" type="text" class="formular-input" placeholder="1" />
-                    </div>
-                    <div class="Buy-Btn">
-                        <input type="submit" value="BUY" onClick="send()" />
-                    </div>
-                    <div class="Info">
-                        <div class="Name">TOLLES ITEM</div>
-                        <div class="Description">Was kann es denn so?</div>
-                    </div>
-                </div>
-            </div>-->
+    <div class="shop-container">
+        <div class="Image-of-Product">
+            <div class="Img"> <img src="SVG/Logo-BWE-SV-final.svg"></div>
+        </div>
+        <div class="Buy-Field">
+            <div class="Size-Select">
+                <select name="title" class="formular-input">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+            <div class="Amount">
+                <input name="Amount" type="text" class="formular-input" placeholder="1" />
+            </div>
+            <div class="Buy-Btn">
+                <input type="submit" value="BUY" onClick="send()" />
+            </div>
+            <div class="Info">
+                <div class="Name">TOLLES ITEM</div>
+                <div class="Description">Was kann es denn so?</div>
+            </div>
+        </div>
+    </div>-->
 
         </div>
     </div>

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE XHTML>
-<html xml:lang="en">
+<html lang="en">
 
 <head>
 
@@ -32,32 +32,30 @@
 
     </header>
 
-    <breadcrumb>
-        <p class="breadcrumb-txt"> Home -> Women -> Results</p>
-    </breadcrumb>
 
     <nav>
-        <ul>
-            <li class="button">
-                <a href="index.html">Home</a>
+        <ul class="nav-button-flex">
+
+            <li>
+                <a class="nav-button" href="index.html">Home</a>
             </li>
-            <li class="button">
-                <a href="About_Eichwege.html">About Eichwege</a>
+            <li>
+                <a class="nav-button" href="About_Eichwege.html">About Eichwege</a>
             </li>
-            <li class="button">
-                <a href="About_Club.html">About the Club</a>
+            <li>
+                <a class="nav-button" href="About_Club.html">About the Club</a>
             </li>
-            <li class="button">
-                <a href="Men.html">Men</a>
+            <li>
+                <a class="nav-button" href="Team(Men).html">Men</a>
             </li>
-            <li class="button">
-                <a href="Women.html">Women</a>
+            <li>
+                <a class="nav-button">Women</a>
             </li>
-            <li class="button">
-                <a href="Staff.html">Staff</a>
+            <li>
+                <a class="nav-button" href="Staff.html">Staff</a>
             </li>
-            <li class="button">
-                <a href="Webshop.html">Webshop</a>
+            <li>
+                <a class="nav-button" href="Webshop.html">Webshop</a>
             </li>
         </ul>
     </nav>
@@ -98,12 +96,19 @@
 
         <div class="content-wrapper">
 
+            <breadcrumb>
+                <p class="breadcrumb-txt"> <a href="index.html">Home</a> -> <a href="Women.html">Team(Women)</a> -> Results</p>
+            </breadcrumb>
+
             <div class="button-alignment-men-women">
                 <a class="button" href="Women.html">Team</a>
                 <a class="button" href="Fixtures(Women).html">Fixtures</a>
                 <a class="button" href="League_Table(Women).html">League Table</a>
             </div>
             <h1 class="headline-txt">Results(Women)</h1>
+            <noscript>
+                <h2 class="headline-txt"> <a href="XMLDATA/Results(Women).xml" target="_blank" rel="noopener noreferrer">Open</a></h2>"
+            </noscript>
             <table class="table-format" id="results"></table>
 
             <script>

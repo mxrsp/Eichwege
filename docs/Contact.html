@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE XHTML>
-<html xml:lang="en">
+<html lang="en">
 
 <head>
     
@@ -42,7 +42,7 @@
     </script>
 
     <!-- Start des Header Bereiches -->
-    <header class="header-img-home">
+    <header class="header-img-home" title="Picture of a football.">
 
         <a href="index.html">
             <img class="logo-header" src="SVG/Logo-BWE-SV-final.svg" alt="Logo of the club">
@@ -51,32 +51,30 @@
 
     </header>
 
-    <breadcrumb>
-        <p class="breadcrumb-txt"> Home -> Contact</p>
-    </breadcrumb>
 
     <nav>
-        <ul>
-            <li class="button">
-                <a href="index.html">Home</a>
+        <ul class="nav-button-flex">
+
+            <li class="active">
+                <a class="nav-button" href="index.html">Home</a>
             </li>
-            <li class="button">
-                <a href="About_Eichwege.html">About Eichwege</a>
+            <li>
+                <a class="nav-button" href="About_Eichwege.html">About Eichwege</a>
             </li>
-            <li class="button">
-                <a href="About_Club.html">About the Club</a>
+            <li>
+                <a class="nav-button" href="About_Club.html">About the Club</a>
             </li>
-            <li class="button">
-                <a href="Men.html">Men</a>
+            <li>
+                <a class="nav-button" href="Men.html">Men</a>
             </li>
-            <li class="button">
-                <a href="Women.html">Women</a>
+            <li>
+                <a class="nav-button" href="Women.html">Women</a>
             </li>
-            <li class="button">
-                <a href="Staff.html">Staff</a>
+            <li>
+                <a class="nav-button" href="Staff.html">Staff</a>
             </li>
-            <li class="button">
-                <a href="Webshop.html">Webshop</a>
+            <li>
+                <a class="nav-button" href="Webshop.html">Webshop</a>
             </li>
         </ul>
     </nav>
@@ -85,6 +83,9 @@
 
         <div class="content-wrapper">
 
+            <breadcrumb>
+                <p class="breadcrumb-txt"> <a href="index.html">Home</a> -> Contact</p>
+            </breadcrumb>
             <h1 class="headline-txt">Contact</h1>
 
             <p class="normal-txt">
@@ -92,18 +93,32 @@
             </p>
 
             <form>
-                <select name="title" class="formular-input">
-                    <option value="mr">Mr.</option>
-                    <option value="ms">Ms.</option>
-                    <option value="dirvers">Divers</option>
-                </select>
-                <input name="surname" type="text" class="formular-input" placeholder="Surname" />
-                <input name="name" type="text" class="formular-input" placeholder="Name" />
-                <input name="email" type="text" class="formular-input" placeholder="Email" />
-                <input name="subject" type="text" class="formular-input" placeholder="Subject" />
-                <textarea name="message" class="formular-input" placeholder="Message"></textarea>
+                <label title="Select formular input title.">
+                    <select name="title" class="formular-input">
+                        <option value="mr">Mr.</option>
+                        <option value="ms">Ms.</option>
+                        <option value="dirvers">Divers</option>
+                    </select>
+                </label>
+                <label for="surname" title="Put your surname here." id="surnameLabel" class="sr-only">Surname</label>
+                <input name="surname" type="text" class="formular-input" placeholder="Surname" id="surname" alt="" />
 
+                <label for="name" title="Put your name here." id="nameLabel" class="sr-only">Name</label>
+                <input name="name" type="text" class="formular-input" placeholder="Name" alt="Put your name here." id="name" />
+
+                <label for="email" title="Put your Email here." id="emailLabel" class="sr-only">Email</label>
+                <input name="email" type="text" class="formular-input" placeholder="Email" alt="Put your email-address here." id="email" />
+
+                <label for="subject" title="Put your Email here." id="subjectLabel" class="sr-only">Subject</label>
+                <input name="subject" type="text" class="formular-input" placeholder="Subject" alt="Put your subject here." id="subject" />
+
+                <label for="message" title="Put your message here." id="messageLabel" class="sr-only">Message</label>
+                <textarea name="message" class="formular-input" placeholder="Message" id="message"></textarea>
+
+                <label for="randomField" title="Read Captcha here." id="captchaLabel1" class="sr-only">Captcha</label>
+                <label for="captchaEnter" title="Enter Captcha here." id="captchaLabel2" class="sr-only">Captcha-Enter</label>
                 <div class="flex-captcha">
+
                     <input type="text" id="randomField" disabled />
                     <br><br>
                     <input id="captchaEnter" size="20" maxlength="6" />
