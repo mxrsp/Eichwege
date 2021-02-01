@@ -8,13 +8,13 @@ html, body {
 }
 
 @font-face {
-font-family: Garamond;
-src: url("https://allfont.de/allfont.css?fonts=garamond");
+    font-family: Garamond;
+    src: url("https://allfont.de/allfont.css?fonts=garamond");
 }
 
 @font-face {
-font-family: Copperplate;
-src: url("https://fontsgeek.com/copperplate-font");
+    font-family: Copperplate;
+    src: url("https://fontsgeek.com/copperplate-font");
 }
 
 /* nav */
@@ -45,616 +45,615 @@ nav ul {
     height: 1px;
     overflow: hidden;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 28em) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} 
 
 @media only screen and (max-width: 30em) {
-	    /* horizontal scrollbar for tables if mobile screen */
+    /* horizontal scrollbar for tables if mobile screen */
     .table-format {
-			display: block;
-			overflow-x: auto;
-		}
-		.footer-headline-txt {
-			display:none;
-		}
+        display: block;
+        overflow-x: auto;
+    }
+
+    .footer-headline-txt {
+        display: none;
+    }
+
+    .normal-txt {
+        font-size: 10%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    
+    .header-headline-txt {
+        display:none !important;
+    }
+    .headline-txt {
+        font-size: 30px !important;
+    }
+    .normal-txt {
+        font-size: 16px !important; 
+    }
 }
 
-@media only screen and (max-width: 47em) {
-	    .sidenav {
-	        position:absolute;
-	    }
-		.webshop {
-			flex-direction:column;
-		}	
-        .header-headline-txt {
-            display:none;
-        }
-}
-
-     
-	
-#main-navigation {
-	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
+    #main-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
 
 
-/*-------------------------------------------------------*/
+    /*-------------------------------------------------------*/
 
-#bg-color {
-	/*ckground: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);*/
-    /*ckground: linear-gradient(90deg, rgba(2,17,177,1) 0%, rgba(28,28,28,1) 100%);*/
-	background: rgba(2, 17, 177, 1);*/
-}
-/* Formatierung für normalen Text */
-.normal-txt {
-    font-size: 20px;
-    font-family: "Garamond", Arial;
-    color: black;
-    text-align: center;
-    padding: 2%; 
-}
+    #bg-color {
+        /*ckground: linear-gradient(90deg, rgba(68,147,96,1) 0%, rgba(41,86,81,1) 100%);*/
+        /*ckground: linear-gradient(90deg, rgba(2,17,177,1) 0%, rgba(28,28,28,1) 100%);*/
+        background: rgba(2, 17, 177, 1);
+        */
+    }
+    /* Formatierung für normalen Text */
+    .normal-txt {
+        font-size: 150%;
+        font-family: "Garamond", Arial;
+        color: black;
+        text-align: center;
+        padding: 2%;
+    }
 
-/* Formatierung für Überschriften */
+    /* Formatierung für Überschriften */
 .headline-txt {
-    font-size: 45px;
+    font-size: 4vw;
     font-weight: lighter;
     font-family: "Copperplate", Arial;
     color: black;
     text-align: center;
-    padding: 3%; 
+    padding: 3%;
 }
 
 
-/* ------------------ Start Header ------------------ */
+    /* ------------------ Start Header ------------------ */
 
 
-/* Logo im Header */
-.logo-header {
-    position:absolute;
-    height: 90%;
-    margin-left: 15%;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
+    /* Logo im Header */
+    .logo-header {
+        position: absolute;
+        height: 90%;
+        margin-left: 15%;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
 
-/* Wenn man über Logo hovert */
-.logo-header:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    transform: scale(1.05);
-}
+        /* Wenn man über Logo hovert */
+        .logo-header:hover {
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            transform: scale(1.05);
+        }
 
-/* Überschrift im Header */
-.header-headline-txt {
-    font-family: "Copperplate", Arial;
-    color: white;
-    text-align: center;
-    margin: auto 10% auto auto;
-}
+    /* Überschrift im Header */
+    .header-headline-txt {
+        font-family: "Copperplate", Arial;
+        color: white;
+        text-align: center;
+        margin: auto 10% auto auto;
+    }
 
-/* Header Bild für Home */
-.header-img-home {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/introduction.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px ;
-}
+    /* Header Bild für Home */
+    .header-img-home {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/introduction.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px;
+    }
 
-/* Header Bild für About Eichwege */
-.header-img-about-eichwege {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/about_eichwege.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px ;
-}
+    /* Header Bild für About Eichwege */
+    .header-img-about-eichwege {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/about_eichwege.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px;
+    }
 
-/* Header Bild für Fixtures */
-.header-img-fixtures {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    justify-content:space-between;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/fixtures.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px ;
-}
+    /* Header Bild für Fixtures */
+    .header-img-fixtures {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        justify-content: space-between;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/fixtures.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px;
+    }
 
-/* Header Bild für About the Club */
-.header-img-about-club {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/about_the_club.jpg);
-    background-position: center;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px;
-}
+    /* Header Bild für About the Club */
+    .header-img-about-club {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/about_the_club.jpg);
+        background-position: center;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px;
+    }
 
-/* Header Bild für Last Results */
-.header-img-results {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/last_results.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: space-between;
-    background-size: cover;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px;
-}
+    /* Header Bild für Last Results */
+    .header-img-results {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/last_results.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        background-size: cover;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px;
+    }
 
-/* Header Bild für League Table */
-.header-img-league-table {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/league_table.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: space-between;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px;
-}
+    /* Header Bild für League Table */
+    .header-img-league-table {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/league_table.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-between;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px;
+    }
 
-/* Header Bild für Team */
-.header-img-team {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/team.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: space-between;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px;
-}
+    /* Header Bild für Team */
+    .header-img-team {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0)), url(header_images/team.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-between;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px;
+    }
 
-/* Button Design */
-.nav-button {
-    background-color: #CAD0CD; 
-    border: 1px solid #000000;
-    color: black;
-    padding-top: 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 99%;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-	font-family: "Garamond", Arial;
-	letter-spacing: 2px;
-	height: 2em;
-    width: 10em;
-}
+    /* Button Design */
+    .nav-button {
+        background-color: #CAD0CD;
+        border: 1px solid #000000;
+        color: black;
+        padding-top: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 99%;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        font-family: "Garamond", Arial;
+        letter-spacing: 2px;
+        height: 2em;
+        width: 10em;
+    }
 
-/* Wenn man über Button hovert */
-.nav-button:hover {
-    background-color: #1685DE;
-    cursor: pointer; 
-}
+        /* Wenn man über Button hovert */
+        .nav-button:hover {
+            background-color: #1685DE;
+            cursor: pointer;
+        }
 
-.nav-button-flex {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2% 5% 0 5%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
+    .nav-button-flex {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2% 5% 0 5%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
 
-/* ------------------ Ende Header ------------------ */
-
-
-
-
-
-
-/* ------------------ Start Wrapper ------------------ */
-
-
-/* Darstellung der Tabellen */
-.table-format {
-    text-align: center;
-    color: black;
-    border: 1px solid #1685DE;
-	width: 100%;
-	cellspacing: 2;
-	cellpadding: 0;
-}
-
-/* Wrapper für Website */
-.wrapper {
-    min-height: calc(100vh - 5em - 6px);
-    display: flex;
-    flex-direction: row;
-    min-width: 270px;
-}
-
-/* Content Wrapper für Inhalt */
-.content-wrapper {
-    min-height: auto;
-    background-color: #CAD0CD;
-    background-size: auto;
-    width: 90%;
-    margin: 25px auto 0 auto;
-    box-sizing: border-box;
-}
-
-/* Button Design */
-.button {
-    background-color: #1685DE; 
-    border: 1px solid #1685DE; 
-    color: black;
-    padding-top: 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 99%;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-	font-family: "Garamond", Arial;
-	letter-spacing: 2px;
-	height: 35px;
-    width: 150px;
-    margin: 0 2% 0 5%;
-}
-
-/* Wenn man über Button hovert */
-.button:hover {
-    background-color: #5dadef;
-    cursor: pointer; 
-}
-
-/* Zentrierung des Buttons */
-.button-alignment {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Zentrierung der Button */
-.button-alignment-men-women {
-    margin: 20px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Spielerei um iframe zu zentrieren */
- .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-wrapper iframe,  
-.video-wrapper object,  
-.video-wrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-/* ------------------ Ende Wrapper ------------------ */
+    /* ------------------ Ende Header ------------------ */
 
 
 
 
 
-/* ------------------ Webshop ------------------ */
+
+    /* ------------------ Start Wrapper ------------------ */
 
 
-.webshop {
-    margin: 20px auto 20px auto;
-    border: 2px solid #1685DE;
-    display: flex;
-    max-width: 1000px;
-}
+    /* Darstellung der Tabellen */
+    .table-format {
+        text-align: center;
+        color: black;
+        border: 1px solid #1685DE;
+        width: 100%;
+        cellspacing: 2;
+        cellpadding: 0;
+    }
 
-.buy-field {
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-}
+    /* Wrapper für Website */
+    .wrapper {
+        min-height: calc(100vh - 5em - 6px);
+        display: flex;
+        flex-direction: row;
+        min-width: 270px;
+    }
 
-.market {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    /* Content Wrapper für Inhalt */
+    .content-wrapper {
+        min-height: auto;
+        background-color: #CAD0CD;
+        background-size: auto;
+        width: 90%;
+        margin: 25px auto 0 auto;
+        box-sizing: border-box;
+    }
 
-.infos {
-    display: flex;
-    flex-direction: column;
-}
+    /* Button Design */
+    .button {
+        background-color: #1685DE;
+        border: 1px solid #1685DE;
+        color: black;
+        padding-top: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 99%;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        font-family: "Garamond", Arial;
+        letter-spacing: 2px;
+        height: 35px;
+        width: 150px;
+        margin: 0 2% 0 5%;
+    }
 
-.shop-pic {
-    height: 250px;
-}
+        /* Wenn man über Button hovert */
+        .button:hover {
+            background-color: #5dadef;
+            cursor: pointer;
+        }
 
-.name {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 5%;
-    color: black;
-    font-family: "Copperplate", Arial;
-}
+    /* Zentrierung des Buttons */
+    .button-alignment {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.description {
-    margin-top: 5%;
-    color: black;
-    font-family:"Copperplate", Arial;
-	margin-bottom: 5%;
-}
+    /* Zentrierung der Button */
+    .button-alignment-men-women {
+        margin: 20px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-/* Darstellung der Textboxen */
-.size-input {
-    cursor: pointer;
-    margin-right: 4%;
-    color: black;
-    font-family: "Garamond", Arial;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border: 2px solid #1685DE;
-    padding: 13px;
-    width: 90px;
-    box-sizing: border-box;
-}
+    /* Spielerei um iframe zu zentrieren */
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
 
-/* Darstellung der Textboxen */
-.amount-input {
-    margin-right: 4%;
-    color: black;
-    font-family: "Garamond", Arial;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border: 2px solid #1685DE;
-    padding: 13px;
-    width: 90px;
-    box-sizing: border-box;
-}
+        .video-wrapper iframe,
+        .video-wrapper object,
+        .video-wrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-/* Darstellung des Submit-Buttons */
-[type="buy"] {
-    border: 1px solid #1685DE;
-    font-family: "Copperplate", Arial;
-    text-align: center;
-    min-width: 100px;
-    width: 100%;
-    box-sizing: border-box;
-    background: #1685DE;
-    cursor: pointer;
-    color: black;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    font-weight:700;
-}
 
-/* Darstellung beim hovern über den Submit-Buttons */
-    [type="buy"]:hover {
-        background: #5dadef;
+    /* ------------------ Ende Wrapper ------------------ */
+
+
+
+
+
+    /* ------------------ Webshop ------------------ */
+
+
+    .webshop {
+        margin: 20px auto 20px auto;
+        border: 2px solid #1685DE;
+        display: flex;
+        max-width: 1000px;
+    }
+
+    .buy-field {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .market {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shop-pic {
+        height: 250px;
+    }
+
+    .name {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 5%;
+        color: black;
+        font-family: "Copperplate", Arial;
+    }
+
+    .description {
+        margin-top: 5%;
+        color: black;
+        font-family: "Copperplate", Arial;
+        margin-bottom: 5%;
+    }
+
+    /* Darstellung der Textboxen */
+    .size-input {
+        cursor: pointer;
+        margin-right: 4%;
+        color: black;
+        font-family: "Garamond", Arial;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #1685DE;
+        padding: 13px;
+        width: 90px;
+        box-sizing: border-box;
+    }
+
+    /* Darstellung der Textboxen */
+    .amount-input {
+        margin-right: 4%;
+        color: black;
+        font-family: "Garamond", Arial;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #1685DE;
+        padding: 13px;
+        width: 90px;
+        box-sizing: border-box;
+    }
+
+    /* Darstellung des Submit-Buttons */
+    [type="buy"] {
+        border: 1px solid #1685DE;
+        font-family: "Copperplate", Arial;
+        text-align: center;
+        min-width: 100px;
+        width: 100%;
+        box-sizing: border-box;
+        background: #1685DE;
+        cursor: pointer;
+        color: black;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        font-weight: 700;
+    }
+
+        /* Darstellung beim hovern über den Submit-Buttons */
+        [type="buy"]:hover {
+            background: #5dadef;
+        }
+
+
+    /* ------------------ Ende Webshop ------------------ */
+
+
+
+
+
+
+
+    /* ------------------ Start Contact ------------------ */
+
+
+    /* Darstellung des Kontaktformulars */
+    form {
+        max-width: 500px;
+        margin: 50px auto 0 auto;
+    }
+
+    /* Darstellung der Textboxen */
+    .formular-input {
+        color: black;
+        font-family: "Garamond", Arial;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #1685DE;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: 0;
+    }
+
+    /* Darstellung der Messagebox */
+    textarea {
+        color: white;
+        height: 200px;
+        line-height: 150%;
+        resize: vertical;
+    }
+
+    /* Darstellung des Submit-Buttons */
+    [type="submit"] {
+        font-family: "Copperplate", Arial;
+        width: 100%;
+        background: #1685DE;
+        border: 1px solid #1685DE;
+        cursor: pointer;
+        color: black;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        font-weight: 700;
+    }
+
+        /* Darstellung beim hovern über den Submit-Buttons */
+        [type="submit"]:hover {
+            background: #5dadef;
+        }
+
+    /* Zentrieren des Captchers */
+    .flex-captcha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    /* Darstellung des Captcha Strings */
+    #randomField {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family: "Garamond", Arial;
+        font-size: 30px;
+        border-radius: 5px;
+        line-height: 22px;
+        width: 200px;
+        color: white;
+        border: 2px solid #1685DE;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Darstellung des Eingabefelds für Captcha*/
+    #captchaEnter {
+        font-family: "Garamond", Arial;
+        font-size: 30px;
+        border-radius: 5px;
+        line-height: 22px;
+        width: 200px;
+        color: black;
+        border: 2px solid #1685DE;
+        text-align: center;
+        box-sizing: border-box;
     }
 
 
-/* ------------------ Ende Webshop ------------------ */
+    /* ------------------ Ende Contact ------------------ */
 
 
 
 
 
 
+    /* ------------------ Start Footer ------------------ */
 
-/* ------------------ Start Contact ------------------ */
 
-
-/* Darstellung des Kontaktformulars */
-form { 
-    max-width: 500px; 
-    margin: 50px auto 0 auto; 
-}
-
-/* Darstellung der Textboxen */
-.formular-input {
-    color: black;
-    font-family: "Garamond", Arial;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border: 2px solid #1685DE;
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    outline: 0;
-}
-
-/* Darstellung der Messagebox */
-textarea {
-    color: white;
-    height: 200px;
-    line-height: 150%;
-    resize: vertical;
-}
-
-/* Darstellung des Submit-Buttons */
-[type="submit"] {
-    font-family: "Copperplate", Arial;
-    width: 100%;
-    background: #1685DE;
-    border: 1px solid #1685DE;
-    cursor: pointer;
-    color: black;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    font-weight:700;
-}
-
-/* Darstellung beim hovern über den Submit-Buttons */
-    [type="submit"]:hover {
-        background: #5dadef;
+    /* Footer */
+    .site-footer {
+        margin-top: 50px;
+        height: 120px;
+        background-color: #CAD0CD;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px inset;
     }
 
-/* Zentrieren des Captchers */
-.flex-captcha {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5%;
-}
+    /* Logo im Footer */
+    .logo-footer {
+        height: 110px;
+        margin: auto auto auto auto;
+    }
 
-/* Darstellung des Captcha Strings */
-#randomField {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: "Garamond", Arial;
-    font-size: 30px;
-    border-radius: 5px;
-    line-height: 22px;
-    width: 200px;
-    color: white;
-    border: 2px solid #1685DE;
-    text-align: center;
-    box-sizing: border-box;
-}
+    /* Anordnen der Elemente */
+    .flex-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
-/* Darstellung des Eingabefelds für Captcha*/
-#captchaEnter { 
-    font-family: "Garamond", Arial;
-    font-size: 30px;
-    border-radius: 5px;
-    line-height: 22px;
-    width: 200px;
-    color: black;
-    border: 2px solid #1685DE;
-    text-align: center;
-    box-sizing: border-box;
-}
+    /* Überschrift im Footer */
+    .footer-headline-txt {
+        position: relative;
+        font-size: 20px;
+        font-family: "Copperplate", Arial;
+        color: black;
+        text-align: center;
+        margin: 49px auto auto auto;
+    }
 
+    /* Normaler Text im Footer */
+    .footer-normal-txt {
+        font-size: 20px;
+        font-family: "Garamond", Arial;
+        color: black;
+        text-align: center;
+        margin: 43px auto auto auto;
+        text-decoration: none;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
 
-/* ------------------ Ende Contact ------------------ */
-
-
+        /* Normaler Text im Footer beim drüber hovern */
+        .footer-normal-txt:hover {
+            color: #1685DE;
+            cursor: pointer;
+        }
 
 
-
-
-/* ------------------ Start Footer ------------------ */
-
-
-/* Footer */
-.site-footer {
-    margin-top: 50px;
-    height: 120px; 
-    background-color: #CAD0CD;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px inset;
-}
-
-/* Logo im Footer */
-.logo-footer {
-    height: 110px;
-    margin: auto auto auto auto;
-}
-
-/* Anordnen der Elemente */
-.flex-layout {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-/* Überschrift im Footer */
-.footer-headline-txt {
-    position: relative;
-    font-size: 20px;
-    font-family: "Copperplate", Arial;
-    color: black;
-    text-align: center;
-    margin: 49px auto auto auto;
-}
-
-/* Normaler Text im Footer */
-.footer-normal-txt {
-    font-size: 20px;
-    font-family: "Garamond", Arial;
-    color: black;
-    text-align: center;
-    margin: 43px auto auto auto;
-    text-decoration: none;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-
-/* Normaler Text im Footer beim drüber hovern */
-.footer-normal-txt:hover {
-    color: #1685DE;
-    cursor: pointer;
-}
-
-
-/* ------------------ Ende Footer ------------------ */
+    /* ------------------ Ende Footer ------------------ */
 
