@@ -61,6 +61,7 @@ nav ul {
         font-size: 10%;
     }
 }
+
 @media only screen and (max-width: 900px) {
     
     .header-headline-txt {
